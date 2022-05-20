@@ -1,0 +1,42 @@
+/* style.css / about / よね/Yone のサイト / yone1130 */
+main img {
+  display: block;
+
+}
+
+@media (min-width: 941px) {
+  main section {
+    padding: 0 15vw;
+  }
+
+  main .main {
+    /* display: flex; */
+    margin: 0;
+    padding: 0 auto;
+  }
+  
+  main img {
+    float: left;
+    margin: 0;
+    width: 15em;
+  }
+}
+
+@media (max-width: 940px) {
+  main section {
+    padding: 0 5vw;
+  }
+
+  main img {
+    margin: 0 auto;
+    width: 10em;
+  }
+}
+
+main .content {
+  margin: 2em 3em 0 3em;
+}
+
+main .content p {
+  margin: 0;
+}

@@ -1,0 +1,115 @@
+<!-- index.html / accounts /よね/Yone のサイト / yone1130 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="よね/Yone">
+  <meta name="description" content="よね/Yone のサイトです。">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <title>My accounts - Yone's site</title>
+
+  <!-- Links -->
+  <base href="https://yone1130.github.io/site/"/>
+  <link rel="icon" href="./Images/icon.png">
+  <link rel="apple-touch-icon" href="./Images/icon.png">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./accounts/Styles/style.css">
+  <link rel="stylesheet" href="./Styles/ui.css">
+
+  <!-- noscript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=./en/noscript/">
+  </noscript>
+</head>
+<body>
+  <header>
+    <a href="./en/" class="logo">
+      <img src="./Images/icon.png" alt="Yone's icon"/>
+      <p>Yone's site</p>
+    </a>
+
+    <nav class="nav_links">
+      <div class="mebu-pop">
+        <input type="checkbox" id="menuButton-click">
+        <label for="menuButton-click" class="menuButton"><span></span></label>
+        <div class="menuContent">
+          <ul>
+            <li><a href="./en/">Home</a></li>
+            <li><a href="./en/news/">News</a></li>
+            <li><a href="./en/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="pageTitle">My accounts</h1>
+
+      <div class="main">
+        <div class="first">
+          <a href="https://www.twitter.com/yone1130_/">
+            <div class="twitter">
+              <img src="./accounts/Images/ops/twitter.png" alt="Twitter's icon"/>
+              <p>Twitter</p>
+            </div>
+          </a>
+          <a href="https://discord.com/invite/vKTfubEn9q/">
+            <div class="discord">
+              <img src="./accounts/Images/ops/discord.png" alt="Discord's icon"/>
+              <p>Discord server</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="second">
+          <a href="https://www.facebook.com/profile.php?id=100045281953201">
+            <div class="facebook">
+              <img src="./accounts/Images/ops/facebook.png" alt="Facebook's icon"/>
+              <p>Facebook</p>
+            </div>
+          </a>
+          <a href="https://github.com/yone1130/">
+            <div class="github">
+              <img src="./accounts/Images/ops/github.png" alt="GitHub's icon"/>
+              <p>GitHub</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="third">
+          <a href="https://www.youtube.com/channel/UCHsQ2z1JIYdurO9WfnwNN3w/">
+            <div class="youtube">
+              <img src="./accounts/Images/ops/youtube.png" alt="YouTube's icon"/>
+              <p>YouTube channel</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/yone1130_/">
+            <div class="instagram">
+              <img src="./accounts/Images/ops/instagram.png" alt="Instagram's icon"/>
+              <p>Instagram</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="nav_links">
+      <a href="./en/contact/">Contact</a>
+      <a href="./en/sitemap/">Sitemap</a>
+    </nav>
+    <p>Created by Yone1130.</p>
+    <select  id="lang" name="lang" onChange="location.href='./'+value+'accounts/';">
+      <option value="">日本語 / Japanese</option>
+      <option value="en/" selected>English / 英語</option>
+    </select>
+  </footer>
+</body>
+</html>

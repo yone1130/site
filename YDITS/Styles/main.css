@@ -1,0 +1,114 @@
+/* style.css / YDITS / よね/Yone のサイト / Yone */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----- Other ----- */
+/* --- main --- */
+main .hero {
+  margin: 5em 0 5em 0;
+}
+
+main .pageTitle {
+  min-height: 5em;
+  font-size: 1.2em;
+}
+
+main .pageTitle h1 {
+  margin: 0 0 0.3em 0 ;
+}
+
+main .pageTitle p {
+  margin: 0;
+}
+
+main .pageLink {
+  margin: 0 0 10em 0;
+}
+
+main .pageLink nav ul {
+  display: flex;
+  list-style: none;
+}
+
+@media (min-width: 1280px) {
+  main .pageLink nav ul {
+    padding: 0 10em;
+  }
+}
+
+@media (max-width: 1279px) {
+  main .pageLink nav ul {
+    padding: 0 5em;
+  }
+}
+
+main .pageLink nav ul li {
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+main .pageLink nav ul li a {
+  display: inline-block;
+  width: 15em;
+  height: 3.5em;
+  border-radius: 0.2em;
+  padding: 2em 0 0 0;
+  border: thin solid rgba(224, 224, 255, 255);
+  text-decoration: none;
+  color: #111;
+  transition: all .1s;
+}
+
+main .pageLink nav ul li a:hover {
+  background-color: rgba(224, 224, 255, 255);
+}
+
+main #platform {
+  margin: 5em 0;
+  text-align: center;
+}
+
+main #platform img {
+  margin: 0 5em;
+  width: 10em;
+  border-radius: 1em;
+}
+
+main #source {
+  margin: 5em 15em;
+}
+
+main #source h2,
+main #source p {
+  text-align: center;
+}
+
+main  #source ul {
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  main .pageLink nav ul {
+    display: block;
+    padding: 0;
+  }
+
+  main .pageLink nav ul li {
+    margin: 2em auto;
+  }
+
+  main #source {
+    margin: 5em 3em;
+  }
+}
+
+main #terms {
+  margin: 5em 0;
+  text-align: center;
+}
+
+main a {
+  margin: 0 auto;
+}

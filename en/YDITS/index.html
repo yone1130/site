@@ -1,0 +1,116 @@
+<!-- index.html / YDITS /よね/Yone のサイト / Yone -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="よね/Yone">
+  <meta name="description" content="YDITS official page">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <title>YDITS official page</title>
+
+  <!-- Links -->
+  <base href="https://yone1130.github.io/site/"/>
+  <link rel="icon" href="./Images/icon.png">
+  <link rel="apple-touch-icon" href="./Images/icon.png">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./Styles/ui.css">
+  <link rel="stylesheet" href="./YDITS/Styles/main.css">
+
+  <!-- noscript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=./en/noscript/index.html">
+  </noscript>
+</head>
+
+<body>
+  <header>
+    <a href="./en/" class="logo">
+      <img src="./Images/icon.png" alt="よね/Yone のアイコン"/>
+      <p>Yone's site</p>
+    </a>
+
+    <nav class="nav_links">
+      <div class="mebu-pop">
+        <input type="checkbox" id="menuButton-click">
+        <label for="menuButton-click" class="menuButton"><span></span></label>
+
+        <div class="menuContent">
+          <ul>
+            <li><a href="./en/">Home</a></li>
+            <li><a href="./en/news/">News</a></li>
+            <li><a href="./en/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="pageTitle">
+        <h1>YDITS</h1>
+        <p>
+          Yone Disaster Information<br/>
+          Transmission System
+        </p>
+      </div>
+
+      <section class="pageLink">
+        <nav>
+          <ul>
+            <li><b><a href="./en/YDITS/index.html#source">Source</a></b></li>
+            <li><b><a href="./en/YDITS/index.html#platform">Platform</a></b></li>
+            <li><b><a href="./en/YDITS/index.html#terms">Terms</a></b></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
+    <section id="platform">
+      <h2>Platform</h2>
+      <img src="./accounts/Images/ops/twitter.png" alt="Twitter's icon">
+      <img src="./accounts/Images/ops/discord.png" alt="Discord's icon">
+    </section>
+
+    <section id="source">
+      <h2>Source</h2>
+      <p>
+        <span>災害情報を投稿するに際し、次の機関から情報を提供させていただいています。<br/></span>
+        <ul>
+          <li>
+            <a href="https://www.bosai.go.jp/">国立研究開発法人防災科学技術研究所</a> の提供する <a href="http://www.kmoni.bosai.go.jp/">強震モニタ</a> を利用して、<br/>
+            <a href="https://www.jma.go.jp/jma/">国土交通省・気象庁</a> が発表する緊急地震速報を取得。<br/>
+          </li>
+          <li>
+            <a href="https://www.p2pquake.net/json_api_v2/">P2P地震情報 が提供する JSON API v2</a> を利用して、<br/>
+            <a href="https://www.jma.go.jp/jma/">国土交通省・気象庁</a> が発表する地震情報を取得。<br/>
+            この情報の利用に際し、気象庁ホームページの利用規約 が適用されています。<br/>
+          </li>
+        </ul>
+        これらの情報を提供してくださる方々に感謝申し上げます。
+      </p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms</h2>
+      <a class="button_bule" href="./en/YDITS/terms/">Terms of YDITS</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="nav_links">
+      <a href="./en/contact/">Contact</a>
+      <a href="./en/sitemap/">Sitemap</a>
+    </nav>
+    <p>Created by Yone.</p>
+    <select  id="lang" name="lang" onChange="location.href='./'+value+'YDITS/';">
+      <option value="">日本語 / Japanese</option>
+      <option value="en/" selected>English / 英語</option>
+    </select>
+  </footer>
+</body>
+</html>

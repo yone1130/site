@@ -1,0 +1,80 @@
+<!-- index.html / news / よね/Yone のサイト / yone1130 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="よね/Yone">
+  <meta name="description" content="よね/Yone のサイトです。">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <title>News - Yone's site</title>
+
+  <!-- Links -->
+  <base href="https://yone1130.github.io/site/"/>
+  <link rel="icon" href="./Images/icon.png">
+  <link rel="apple-touch-icon" href="./Images/icon.png">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./news/Styles/style.css">
+  <link rel="stylesheet" href="./Styles/ui.css">
+
+  <!-- noscript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=./en/noscript/index.html">
+  </noscript>
+</head>
+<body>
+  <header>
+    <a href="./en/" class="logo">
+      <img src="./Images/icon.png" alt="Yone's icon"/>
+      <p>Yone's site</p>
+    </a>
+
+    <nav class="nav_links">
+      <div class="mebu-pop">
+        <input type="checkbox" id="menuButton-click">
+        <label for="menuButton-click" class="menuButton"><span></span></label>
+        <div class="menuContent">
+          <ul>
+            <li><a href="./en/">Home</a></li>
+            <li><a href="./en/news/">News</a></li>
+            <li><a href="./en/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="pageTitle">News</h1>
+
+    <a href="./en/news/YDITS/" class="button_bule">YDITS News is here</a>
+
+    <section class="latest">
+      <h2>Latest news</h2>
+      <div>
+        <h3><a href="./en/news/2022/05/1501/">Information on the creation of a new website.</a></h3>
+        <p>May 15, 2022</p>
+      </div>
+    </section>
+
+    <section class="all">
+      <h2>All news</h2>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="nav_links">
+      <a href="./en/contact/">Contact</a>
+      <a href="./en/sitemap/">Sitemap</a>
+    </nav>
+    <p>Created by Yone1130.</p>
+    <select  id="lang" name="lang" onChange="location.href='./'+value+'news/';">
+      <option value="">日本語 / Japanese</option>
+      <option value="en/" selected>English / 英語</option>
+    </select>
+  </footer>
+</body>
+</html>

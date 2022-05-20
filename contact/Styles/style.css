@@ -1,0 +1,24 @@
+/* style.css / contact / よね/Yone のサイト / yone1130 */
+main section {
+  text-align: center;
+}
+
+main .link {
+  margin: 1.5em 0 1.5m 0;
+}
+
+main .link p {
+  margin: 2em 0 2em 0;
+}
+
+main .button_bule {
+  display: inline-block;  
+}
+
+main .policy {
+  margin: 3em;
+}
+
+main .policy p {
+  color: rgb(255, 64, 64);
+}
