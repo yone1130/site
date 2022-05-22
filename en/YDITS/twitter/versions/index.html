@@ -1,0 +1,149 @@
+<!-- index.html / YDITS-Twitter-versions / よね/Yone のサイト / Yone -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+
+  <!-- meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="よね/Yone">
+  <meta name="description" content="YDITS for Twitter page.">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <title>Version history - YDITS for Twitter - YDITS official page</title>
+
+  <!-- Links -->
+  <base href="https://yone1130.github.io/site/"/>
+  <link rel="icon" href="./Images/icon.png">
+  <link rel="apple-touch-icon" href="./Images/icon.png">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./contact/policy/Styles/style.css">
+  <link rel="stylesheet" href="./Styles/ui.css">
+
+  <!-- noscript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=./en/noscript/">
+  </noscript>
+</head>
+<body>
+  <header>
+    <a href="./en/" class="logo">
+      <img src="./Images/icon.png" alt="Yone's icon"/>
+      <p>Yone's site</p>
+    </a>
+
+    <nav class="nav_links">
+      <div class="mebu-pop">
+        <input type="checkbox" id="menuButton-click">
+        <label for="menuButton-click" class="menuButton"><span></span></label>
+        <div class="menuContent">
+          <ul>
+            <li><a href="./en/">Home</a></li>
+            <li><a href="./en/news/">News</a></li>
+            <li><a href="./en/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="title">
+        YDITS for Twitter<br/>
+        Version history
+      </h1>
+
+      <div class="main">
+        <div class="1.2.6">
+          <h2>Ver 1.2.6</h2>
+          <ul>
+            <li>Fixed a problem with seismic intensity processing of seismic information</li>
+          </ul>
+        </div>
+
+        <div class="1.2.5">
+          <h2>Ver 1.2.5</h2>
+          <ul>
+            <li>Implement timeout processing for HTTP requests</li>
+          </ul>
+        </div>
+
+        <div class="1.2.4">
+          <h2>Ver 1.2.4</h2>
+          <ul>
+            <li>Changed to work properly on UNIX command line</li>
+          </ul>
+        </div>
+
+        <div class="1.2.3">
+          <h2>Ver 1.2.3</h2>
+          <ul>
+            <li>Faster delivery delay of earthquake information</li>
+          </ul>
+        </div>
+
+        <div class="1.2.2">
+          <h2>Ver 1.2.2</h2>
+          <ul>
+            <li>Fixed a crash problem in Ver. 1.2.1 when network disconnection, strong motion monitor stop, etc. occurred.</li>
+          </ul>
+        </div>
+
+        <div class="1.2.1">
+          <h2>Ver 1.2.1</h2>
+          <ul>
+            <li>Supported specifications to prevent crashes in case of problems such as network disconnection, strong motion monitor outage, etc.</li>
+          </ul>
+        </div>
+
+        <div class="1.2.0">
+          <h2>Ver 1.2.0</h2>
+          <ul>
+            <li>Earthquake Early Warning (Forecast and Warning)</li>
+            <li>Fixed a problem that prevented distribution of earthquake information when it occurred frequently</li>
+            <li>Other minor corrections</li>
+          </ul>
+        </div>
+
+        <div class="1.1.0">
+          <h2>Ver 1.1.0</h2>
+          <ul>
+            <li>Added text for shaking report by seismic intensity</li>
+            <li>Other minor corrections</li>
+          </ul>
+        </div>
+
+        <div class="1.0.1">
+          <h2>Ver 1.0.1</h2>
+          <ul>
+            <li>Fixed a bug in the depth display in the earthquake information.</li>
+            <li>Other minor corrections</li>
+          </ul>
+        </div>
+
+        <div class="1.0.0">
+          <h2>Ver 1.0.0</h2>
+          <ul>
+            <li>First</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <nav class="nav_links">
+      <a href="./contact/">お問い合わせ</a>
+      <a href="./sitemap/">サイトマップ</a>
+    </nav>
+    <p>Created by Yone.</p>
+    <select  id="lang" name="lang" onChange="location.href='./'+value+'YDITS/twitter/versions/';">
+      <option value="">日本語 / Japanese</option>
+      <option value="en/" selected>English / 英語</option>
+    </select>
+  </footer>
+</body>
+</html>

@@ -6,11 +6,11 @@ html {
 /* ----- Other ----- */
 /* --- main --- */
 main .hero {
-  margin: 5em 0 5em 0;
+  min-height: 20vh;
+  padding: 5em 0 0 0;
 }
 
 main .pageTitle {
-  min-height: 5em;
   font-size: 1.2em;
 }
 
@@ -31,15 +31,15 @@ main .pageLink nav ul {
   list-style: none;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1153px) {
   main .pageLink nav ul {
-    padding: 0 10em;
+    padding: 0 5em;
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1152px) {
   main .pageLink nav ul {
-    padding: 0 5em;
+    padding: 0 2em;
   }
 }
 
@@ -55,14 +55,25 @@ main .pageLink nav ul li a {
   height: 3.5em;
   border-radius: 0.2em;
   padding: 2em 0 0 0;
-  border: thin solid rgba(224, 224, 255, 255);
+  border: thin solid rgba(127, 127, 127, 255);
   text-decoration: none;
   color: #111;
   transition: all .1s;
 }
 
 main .pageLink nav ul li a:hover {
-  background-color: rgba(224, 224, 255, 255);
+  background-color: rgba(127, 127, 127, 255);
+  color: #fff;
+}
+
+main section h2 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+main #news {
+  margin: 5em 0;
+  text-align: center;
 }
 
 main #platform {
@@ -89,7 +100,7 @@ main  #source ul {
   padding: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1152px) {
   main .pageLink nav ul {
     display: block;
     padding: 0;
