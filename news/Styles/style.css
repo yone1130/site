@@ -46,6 +46,7 @@ main .content {
 }
 
 main .link {
+  display: block;
   margin: 1em;
   text-align: center;
 }
