@@ -1,42 +1,30 @@
-<!-- index.html / YDITS-news /よね/Yone のサイト / Yone -->
+<!-- index.html / YDITS-news 2022-05-2601 / よね/Yone のサイト / Yone -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
 
-  <!----- meta ----->
+  <!-- meta -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="よね/Yone">
   <meta name="description" content="よね/Yone のサイトです。">
   <meta name="generator" content="Microsoft Visual Studio Code">
-  <title>YDITSのお知らせ - YDITS公式ページ</title>
+  <title>YDITS利用規約 更新のお知らせ - YDITSのお知らせ - よね/Yone のサイト</title>
 
-  <!----- Links ----->
-  <base href="https://yone1130.github.io/site/">
-  <!-- <base href="file:///C:/Git/Repos/site/"> -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!--- fonts --->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">  
-
-  <!--- icon --->
+  <!-- Links -->
+  <base href="https://yone1130.github.io/site/"/>
   <link rel="icon" href="./Images/icon.png">
   <link rel="apple-touch-icon" href="./Images/icon.png">
-
-  <!--- Styles --->
   <link rel="stylesheet" href="./Styles/main.css">
   <link rel="stylesheet" href="./Styles/ui.css">
   <link rel="stylesheet" href="./news/Styles/style.css">
 
   <!-- noscript -->
   <noscript>
-    <meta http-equiv="refresh" content="0; URL=./noscript/index.html">
+    <meta http-equiv="refresh" content="0; URL=./noscript/">
   </noscript>
 </head>
-
 <body>
   <header>
     <a href="./" class="logo">
@@ -52,7 +40,7 @@
           <ul>
             <li><a href="./">ホーム</a></li>
             <li><a href="./news/">お知らせ</a></li>
-            <li><a href="./contact/">お問い合わせ</a></li>
+            <li><a href="./contact/index.html">お問い合わせ</a></li>
           </ul>
         </div>
       </div>
@@ -60,17 +48,17 @@
   </header>
 
   <main>
-    <h1 class="pageTitle">YDITSのお知らせ</h1>
-
     <section>
-      <div>
-        <h3><a href="./YDITS/news/2022/06/1201/">YDITS for Web に関するお詫び</a></h3>
-        <p>2022年6月12日</p>
+      <h1 class="title">YDITS利用規約 更新のお知らせ</h1>
+      <p class="date">2022年5月26日</p>
+
+      <div class="content">
+        本日 26日19時をもって、YDITS利用規約の更新・適用をさせていただきます。<br/>
+        本サービスをご利用いただくユーザーは、本規約に同意していただく必要がありますので、<br/>
+        必ずご確認をお願いいたします。
       </div>
-      <div>
-        <h3><a href="./YDITS/news/2022/05/2601/">YDITS利用規約 更新のお知らせ</a></h3>
-        <p>2022年5月26日</p>
-      </div>
+
+      <a class="link" href="./YDITS/terms/">利用規約を確認する</a>
     </section>
   </main>
 
@@ -79,8 +67,8 @@
       <a href="./contact/">お問い合わせ</a>
       <a href="./sitemap/">サイトマップ</a>
     </nav>
-    <p>&copy;2022 よね/Yone</p>
-    <select  id="lang" name="lang" onChange="location.href='./'+value+'YDITS/news/';">
+    <p>Created by Yone1130.</p>
+    <select  id="lang" name="lang" onChange="location.href='./'+value+'news/2022/05/1501/';">
       <option value="" selected>日本語 / Japanese</option>
       <option value="en/">English / 英語</option>
     </select>

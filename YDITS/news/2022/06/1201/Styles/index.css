@@ -1,0 +1,21 @@
+/* index.css / YDITS-news 2022-06-1201 / よね/Yone のサイト / Yone */
+main .content {
+  display: block;
+  margin: 5em auto;
+  box-shadow: 0 0 0 8px #7f7f7f;
+  width: 64vw;
+
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+}
+
+@media (max-width: 769px) {
+  main section {
+    margin: 1em;
+  }
+
+  main .content {
+    width: 90vw;
+  }
+}
