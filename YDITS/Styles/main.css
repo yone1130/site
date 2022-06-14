@@ -7,11 +7,12 @@ html {
 /* --- main --- */
 main .hero {
   min-height: 20vh;
-  padding: 5em 0 0 0;
+  padding: 2em 0 0 0;
 }
 
 main .pageTitle {
   font-size: 1.2em;
+  margin-bottom: 3em;
 }
 
 main .pageTitle h1 {
