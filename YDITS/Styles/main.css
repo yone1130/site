@@ -72,20 +72,50 @@ main section h2 {
   padding: 1em 0;
 }
 
-main #news {
+#news {
   margin: 5em 0;
   text-align: center;
 }
 
-main #platform {
+#platform {
   margin: 5em 0;
   text-align: center;
 }
 
-main #platform img {
-  margin: 0 5em;
+#platform>.content {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+#platform>.content>.content {
+  /* display: block; */
+  margin: 0 2em;
+  border-radius: .5em;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+  padding: 1em 2em;
+  color: #010101;
+  cursor: pointer;
+  user-select: none;
+}
+
+#platform>.content>.content:hover {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+#platform>.content>.content>img {
   width: 10em;
   border-radius: 1em;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 896px){
+  #platform>.content {
+    flex-direction: column;
+  }
+
+  #platform>.content>.content {
+    margin-top: 2em;
+  }
 }
 
 main #source {
