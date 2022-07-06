@@ -1,0 +1,63 @@
+/* index.css / Yone Discord terms / Yone */
+*{
+  margin: .1em 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #010101;
+}
+
+/* ---------- Main ---------- */
+/* ----- main ----- */
+#main {
+  padding: 2em 10vw 4em 10vw;
+}
+
+#main section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#main h2 {
+  margin-bottom: .5em;
+}
+
+#main ol {
+  padding-left: 1.2em;
+}
+
+#pageTitle {
+  margin: 1em 0;
+  text-align: center;
+}
+
+#term_before {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#endWord {
+  text-align: right;
+}
+
+/* ----- footer ----- */
+footer {
+  height: 6em;
+  background-color: #cccccc;
+
+  user-select: none;
+}
+
+footer>.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
