@@ -1,6 +1,7 @@
 /* index.css / Yone Discord terms / Yone */
-*{
-  margin: .1em 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -22,17 +23,23 @@ body {
   padding-bottom: 1em;
 }
 
+#main section section {
+  padding-left: 1em;
+}
+
 #main h2 {
   margin-bottom: .5em;
 }
 
-#main ol {
+#main ol,
+#main ul {
   padding-left: 1.2em;
 }
 
 #pageTitle {
   margin: 1em 0;
   text-align: center;
+  font-size: 1.3em;
 }
 
 #term_before {
