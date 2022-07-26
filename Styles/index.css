@@ -34,18 +34,15 @@ img {
 
 /* ---------- Main ---------- */
 main {
-  min-height: 100vh;
-}
-
-/* ----- main ----- */
-#main {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  min-height: 100vh;
   padding: 2em 0;
 }
 
+/* ----- main ----- */
 .sections {
   padding: 2em 0;
 }
@@ -76,13 +73,16 @@ main {
   font-size: 1.5em;
 }
 
-/* --- Links --- */
+/* --- Nav --- */
+#nav {
+  width: 70%;
+}
+
+/* Links */
 #links {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 70%;
 
   text-align: center;
 }
@@ -103,13 +103,11 @@ main {
   text-decoration: underline;
 }
 
-/* --- Works --- */
+/* Works */
 #works {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 70%;
 
   text-align: center;
 }
@@ -130,13 +128,11 @@ main {
   text-decoration: underline;
 }
 
-/* --- Contact --- */
+/* Contact */
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 70%;
 
   text-align: center;
 }
