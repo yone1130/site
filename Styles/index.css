@@ -1,0 +1,169 @@
+/* 
+
+  main.css | Yone Terminal
+
+  (c) 2022 よね/Yone
+
+  No modification or reproduction of any kind is permitted.
+  改変や複製を一切禁じます。
+
+*/
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #101020;
+  font-size: 16px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+a {
+  user-select: none;
+}
+
+img {
+  user-select: none;
+}
+
+/* ---------- Main ---------- */
+main {
+  min-height: 100vh;
+}
+
+/* ----- main ----- */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2em 0;
+}
+
+.sections {
+  padding: 2em 0;
+}
+
+.sectionTitle {
+  margin-bottom: .5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* --- Card --- */
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+}
+
+#card img {
+  display: flex;
+  width: 10em;
+  border-radius: 50%;
+}
+
+#card span {
+  margin-top: .5em;
+  font-size: 1.5em;
+}
+
+/* --- Links --- */
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+
+  text-align: center;
+}
+
+#links ol li {
+  margin-bottom: .3em;
+}
+
+#links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+
+  cursor: pointer;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
+
+/* --- Works --- */
+#works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+
+  text-align: center;
+}
+
+#works ol li {
+  margin-bottom: .3em;
+}
+
+#works a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+
+  cursor: pointer;
+}
+
+#works a:hover {
+  text-decoration: underline;
+}
+
+/* --- Contact --- */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+
+  text-align: center;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+
+  cursor: pointer;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ----- footer ----- */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 7em;
+
+  text-align: center;
+  background-color: #101010;
+
+  user-select: none;
+}
