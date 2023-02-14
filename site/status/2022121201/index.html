@@ -1,0 +1,73 @@
+<!--
+
+  index.html | status/2022121201 | Yone's site
+
+  (c) 2022 よね/Yone
+
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <!----- meta ----->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yone Network Server のステータスを確認いただけます。">
+    <title>Yone Network Server ステータス</title>
+
+    <!----- Links ----->
+    <base href="https://yonejp.net/site/status/"/>
+
+    <!--- fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+    <!--- icon --->
+    <link rel="icon" href="../Images/icon.png">
+    <link rel="apple-touch-icon" href="../Images/icon.png">
+
+    <!--- Styles --->
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo">
+            <img src="../Images/icon.png" alt="よね/Yone のアイコン"/>
+            <p>Yone Network Server ステータス</p>
+        </a>
+    </header>
+
+    <main>
+        <h1 id="pageTitle">メンテナンス情報</h1>
+        <section class="sections" id="schedule">
+            <span class="title">Schedule</span>
+            <span class="content">2022/12/12 18:30 - 19:00</span>
+        </section>
+        <section class="sections" id="content">
+            <span class="title">Content</span>
+            <p class="content">
+                緊急サーバーメンテナンス（再起動）を行います。<br>
+                これに伴い停止するサービスは下記の通りです。<br>
+                <br>
+                [Twitter Bot]<br>
+                - YDITS for Twitter<br>
+                <br>
+                [Discord Bot]<br>
+                - YDITS for Discord<br>
+                - Yone Bot<br>
+                - YoneGlobalChat (Yone Botにより稼働)<br>
+                <br>
+                - その他稼働しているBot<br>
+                <br>
+                ※実施時刻は変更する場合があります。<br>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <span>&copy; 2022 よね/Yone</span>
+    </footer>
+</body>
+</html>

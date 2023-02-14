@@ -1,0 +1,101 @@
+<!-- 
+
+  index.html | home | Yone's site
+
+  (c) 2022 よね/Yone 
+
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <!----- meta ----->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="よね/Yone">
+  <meta name="description" content="よね/Yone のサイトです。">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <title>よね/Yone のサイト</title>
+
+  <!----- Links ----->
+  <base href="https://yonejp.net/site/"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--- fonts --->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+  <!--- icon --->
+  <link rel="icon" href="./Images/icon.png">
+  <link rel="apple-touch-icon" href="./Images/icon.png">
+
+  <!--- Styles --->
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./Styles/ui.css">
+
+  <!-- noscript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=./noscript/index.html">
+  </noscript>
+</head>
+
+<body>
+  <header>
+    <a href="./" class="logo">
+      <img src="./Images/icon.png" alt="よね/Yone のアイコン"/>
+      <p>よね/Yone のサイト</p>
+    </a>
+
+    <nav class="nav_links">
+      <div class="mebu-pop">
+        <input type="checkbox" id="menuButton-click">
+        <label for="menuButton-click" class="menuButton"><span></span></label>
+
+        <div class="menuContent">
+          <ul>
+            <li><a href="./">ホーム</a></li>
+            <li><a href="./news/">お知らせ</a></li>
+            <li><a href="./contact/">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="pageTitle">ホーム</h1>
+
+    <section  class="links">
+      <nav class="nav_links">
+        <ul>
+          <div class="first">
+            <li><a class="button_bule" href="./news/">お知らせ</a></li>
+            <li><a class="button_bule" href="https://note.com/yone1130/">ブログ</a></li>
+          </div>
+          <div class="last">
+            <li><a class="button_bule" href="./about/">自己紹介</a></li>
+            <li><a class="button_bule" href="./accounts/">アカウント一覧</a></li>
+          </div>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="YDITS">
+      <a href="https://yone1130.github.io/YDITS/">
+        <h2>YDITS公式ページ</h2>
+        <img src="./Images/YDITS-logo.png" alt="YDITSのロゴ">
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="nav_links">
+      <a href="./contact/">お問い合わせ</a>
+      <a href="./sitemap/">サイトマップ</a>
+    </nav>
+    <p>&copy; 2022 よね/Yone</p>
+  </footer>
+</body>
+</html>

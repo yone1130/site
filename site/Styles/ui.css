@@ -1,0 +1,26 @@
+/* 
+
+  ui.css | Yone's site
+
+  (c) 2022 よね/Yone
+
+*/
+/* --- button --- */
+/* bule */
+.button_bule {
+  display: block;
+  padding: 0.3em 0 0 0;
+  width: 15em;
+  height: 1.8em;
+  border-radius: 0.50em;
+  background-color: rgb(32, 32, 224);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.1s;
+}
+
+.button_bule:hover {
+  background-color: rgb(16, 16, 224);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
+}

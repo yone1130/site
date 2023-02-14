@@ -1,0 +1,46 @@
+/* 
+
+  style.css | about | Yone's site
+
+  (c) 2022 よね/Yone
+
+*/
+
+/* ---------- Main ---------- */
+/* ----- main ----- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .content {
+  margin: 3.5em 3em 0 3em;
+}
+
+#main .content p {
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 941px) {
+  main img {
+    width: 15em;
+  }
+}
+
+@media (max-width: 940px) {
+  main section {
+    flex-direction: column;
+  }
+
+  main img {
+    width: 10em;
+  }
+}

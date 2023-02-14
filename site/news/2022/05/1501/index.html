@@ -1,0 +1,80 @@
+<!-- 
+
+  index.html | news 2022-05-1501 | Yone's site
+
+  (c) 2022 よね/Yone
+
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="よね/Yone">
+  <meta name="description" content="よね/Yone のサイトです。">
+  <meta name="generator" content="Microsoft Visual Studio Code">
+  <title>新ホームページ作成のお知らせ - お知らせ - よね/Yone のサイト</title>
+
+  <!-- Links -->
+  <base href="https://yonejp.net/site/"/>
+  <link rel="icon" href="./Images/icon.png">
+  <link rel="apple-touch-icon" href="./Images/icon.png">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./news/Styles/style.css">
+  <link rel="stylesheet" href="./Styles/ui.css">
+
+  <!-- noscript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=./noscript/">
+  </noscript>
+</head>
+<body>
+  <header>
+    <a href="./" class="logo">
+      <img src="./Images/icon.png" alt="よね/Yone のアイコン"/>
+      <p>よね/Yone のサイト</p>
+    </a>
+
+    <nav class="nav_links">
+      <div class="mebu-pop">
+        <input type="checkbox" id="menuButton-click">
+        <label for="menuButton-click" class="menuButton"><span></span></label>
+        <div class="menuContent">
+          <ul>
+            <li><a href="./">ホーム</a></li>
+            <li><a href="./news/">お知らせ</a></li>
+            <li><a href="./contact/index.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="title">新ホームページ作成のお知らせ</h1>
+      <p class="date">2022年5月15日</p>
+
+      <div class="content">
+        本日 15日、よね/Yone の新ホームページを作成いたしました。<br>
+        旧ホームページのGoogleサイトは、5月31日末日をもって終了させていただきます。
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="nav_links">
+      <a href="./contact/">お問い合わせ</a>
+      <a href="./sitemap/">サイトマップ</a>
+    </nav>
+    <p>Created by Yone1130.</p>
+    <select  id="lang" name="lang" onChange="location.href='./'+value+'news/2022/05/1501/';">
+      <option value="" selected>日本語 / Japanese</option>
+      <option value="en/">English / 英語</option>
+    </select>
+  </footer>
+</body>
+</html>

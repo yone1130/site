@@ -1,0 +1,76 @@
+/* 
+
+  style.css | accounts | Yone's site
+
+  (c) 2022 よね/Yone
+
+*/
+main .main {
+  margin: 2em 0;
+}
+
+@media (min-width: 941px) {
+  main section {
+    padding: 0 15vw;
+  }
+
+  main .main {
+    padding: 0 auto;
+  }
+}
+
+@media (max-width: 940px) {
+  main section {
+    padding: 0 5vw;
+  }
+}
+
+main .main .first,
+main .main .second,
+main .main .third {
+  display: flex;
+  margin: 0 0 2em 0;
+}
+
+main .main a {
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+main .main div div {
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+main .main div div:hover {
+  box-shadow: 0 5px 5px 2px rgba(0, 0, 0, .2);
+}
+
+main .main div div p {
+  margin: 2em 0 0 0;
+  text-align: center;
+  color: rgb(1, 1, 1);
+}
+
+main .main img {
+  width: 10em;
+  border-radius: 0.5em;
+}
+
+@media (max-width: 600px) {
+  main .main {
+    text-align: center;
+  }
+
+  main .main .first,
+  main .main .second,
+  main .main .third {
+    display: block;
+    margin: 0;
+  }
+
+  main .main div div {
+    margin: 2em 0;
+  }
+}
