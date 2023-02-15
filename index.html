@@ -1,69 +1,74 @@
-<!-- 
+<!--
 
-  index.html | Yone Terminal
+    index.html | Yone Homepage
 
-  (c) 2022-2023 よね/Yone
+    (c) 2022-2023 よね/Yone
 
-  No modification or reproduction of any kind is permitted.
-  改変や複製を一切禁じます。
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
- -->
+-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <title>Yone Terminal</title>
+    <!----- Meta ----->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yone Homepage</title>
 
-  <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="dark light">
 
-  <!----- Links ----->
-  <base href="https://yoneyo.com/">
+    <!----- Links ----->
+    <base href="https://www.yoneyo.com/">
 
-  <!--- Fonts --->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap">
+    <!--- Fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
-  <!--- Styles --->
-  <link rel="stylesheet" href="./Styles/index.css">
+    <!--- Styles --->
+    <link rel="stylesheet" href="./Styles/index.css">
 
-  <!--- Icons --->
-  <link rel="icon" href="./Images/iconYone.png">
+    <!--- Icons --->
+    <link rel="icon" href="./Images/iconYone.png">
 </head>
 
 <body>
-  <main>
-    <article class="sections" id="card">
-      <img src="./Images/iconYone.png" alt="Yone's icon">
-      <span>よね/Yone</span>
-    </article>
+    <main>
+        <article class="sections" id="card">
+            <img src="./Images/iconYone.png" alt="Yone's icon">
+            <span>よね/Yone</span>
+        </article>
 
-    <article class="sections" id="nav">
-      <section class="sections" id="links">
-        <h2 class="sectionTitle">Links</h2>
-        <ol>
-          <li><a href="./site/">ホームページ</a></li>
-        </ol>
-    </section>
-    
-    <section class="sections" id="works">
-        <h2 class="sectionTitle">Works</h2>
-        <ol>
-          <li><a href="https://ydits.net/">YDITS公式サイト</a></li>
-        </ol>
-      </section>
+        <nav class="sections" id="nav">
+            <h2 class="sectionTitle">Links</h2>
+            <ol>
+                <li>
+                    <a href="./site/">
+                        <span class="name">Site</span>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ydits.net/">
+                        <span class="name">YDITS Homepage</span>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./site/contact/">
+                        <span class="name">Contact</span>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </a>
+                </li>
+            </ol>
+        </article>
+    </main>
 
-      <section class="sections" id="contact">
-        <h2 class="sectionTitle">Contact</h2>
-        <a href="./site/contact/">お問い合わせ</a>
-      </section>
-    </article>
-  </main>
-
-  <footer>
-    <span>&copy; 2022-2023 よね/Yone</span>
-  </footer>
+    <footer>
+        <span>&copy; 2022-2023 よね/Yone</span>
+    </footer>
 </body>
 </html>

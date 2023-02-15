@@ -1,169 +1,159 @@
-/* 
+/*
 
-  index.css | Yone Terminal
+    index.css | Yone Homepage
 
-  (c) 2022-2023 よね/Yone
+    (c) 2022-2023 よね/Yone
 
-  No modification or reproduction of any kind is permitted.
-  改変や複製を一切禁じます。
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
 */
 @charset "UTF-8";
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* border: red solid 1px; */
 }
 
 body {
-  background-color: #101020;
-  font-size: 16px;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 400;
-  color: #ffffff;
+    background-color: #101020;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
 }
 
-a {
-  user-select: none;
+a, img {
+    user-select: none;
 }
 
-img {
-  user-select: none;
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 /* ---------- Main ---------- */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  min-height: 100vh;
-  padding: 2em 0;
+    min-height: 100vh;
+    padding: 2em 5vw;
 }
 
 /* ----- main ----- */
 .sections {
-  padding: 2em 0;
+    padding: 2em 0;
 }
 
 .sectionTitle {
-  margin-bottom: .5em;
-  text-align: center;
-  font-size: 1.5em;
+    margin-bottom: .5em;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /* --- Card --- */
 #card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  width: 70%;
+    width: 70%;
 }
 
 #card img {
-  display: flex;
-  width: 10em;
-  border-radius: 50%;
+    display: flex;
+    width: 10em;
+    border-radius: 50%;
 }
 
 #card span {
-  margin-top: .5em;
-  font-size: 1.5em;
+    margin-top: .5em;
+    font-size: 1.5em;
 }
 
 /* --- Nav --- */
 #nav {
-  width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    text-align: center;
 }
 
-/* Links */
-#links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
+#nav h2 {
+    padding: 1em 0;
 }
 
-#links ol li {
-  margin-bottom: .3em;
+#nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+    width: 50%;
 }
 
-#links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.1em;
-
-  cursor: pointer;
+#nav ol li {
+    margin-bottom: 2em;
+    border-bottom: 1px #ffffff solid;
+    width: 100%;
 }
 
-#links a:hover {
-  text-decoration: underline;
+#nav a {
+    display: flex;
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: .5em .5em;
+    
+    cursor: pointer;
 }
 
-/* Works */
-#works {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
+#nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
-#works ol li {
-  margin-bottom: .3em;
+#nav a .name {
+    display: block;
+    margin: 0;
+    width: 90%;
+    text-align: left;
 }
 
-#works a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.1em;
-
-  cursor: pointer;
-}
-
-#works a:hover {
-  text-decoration: underline;
-}
-
-/* Contact */
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-}
-
-#contact a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.1em;
-
-  cursor: pointer;
-}
-
-#contact a:hover {
-  text-decoration: underline;
+#nav a .material-symbols-outlined {
+    display: block;
+    margin: 0;
+    width: 10%;
 }
 
 /* ----- footer ----- */
 footer {
-  position: fixed;
-  bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: 7em;
 
-  height: 7em;
-  width: 100%;
+    text-align: center;
+    background-color: #101010;
 
-  text-align: center;
-  background-color: #101010;
+    user-select: none;
+}
 
-  user-select: none;
+@media (max-width: 1024px) {
+    #nav ol {
+        width: 100%;
+    }
 }

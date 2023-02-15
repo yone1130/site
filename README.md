@@ -1,5 +1,5 @@
 
-# Yone Terminal
+# Yone Site
 
 ## About | 概要
 
