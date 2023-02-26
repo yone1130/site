@@ -111,49 +111,6 @@ main .nav_links li {
   }
 }
 
-main .YDITS {
-  margin-top: 5em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10em;
-  width: 50em;
-  border-radius: 1em;
-  box-shadow: 0 0 16px 5px rgba(0, 0, 0, .2);
-  text-align: center;
-  transition: all 0.1s;
-}
-
-main .YDITS:hover {
-  box-shadow: 0 0 8px 5px rgba(0, 0, 0, .2);
-}
-
-main .YDITS a {
-  display: block;
-  color: rgb(1, 1, 1);
-}
-
-main .YDITS h2 {
-  display: inline-block;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-main .YDITS img {
-  margin: 0 auto;
-  display: block;
-  width: 20em;
-}
-
-@media (max-width: 1024px) {
-  main .YDITS {
-    width: 20em;
-  }
-
-  main .YDITS img {
-    width: 10em;
-  }
-}
-
 header .logo {
   display: flex;
   margin: 0 0 0 1.5em;
