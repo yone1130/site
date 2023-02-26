@@ -1,8 +1,11 @@
 /* 
 
-  style.css | home | Yone's site
+    style.css | home | Yone Site
 
-  (c) 2022 よね/Yone
+    (c) 2022-2023 よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
 */
 body {
@@ -37,13 +40,10 @@ footer {
   background-color: rgb(1, 1, 1);
 }
 
-/* --- Tags --- */
 a {
   color: rgb(32, 32, 224);
 }
 
-/* --- Other --- */
-/* main */
 main .pageTitle {
   margin: 2em 0 0 0;
   padding: 0;
@@ -124,7 +124,6 @@ main .nav_links a:hover {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
 }
 
-/* header */
 header .logo {
   display: flex;
   margin: 0 0 0 1.5em;
@@ -301,7 +300,6 @@ header .nav_links a:hover {
 }
 }
 
-/* footer */
 footer .nav_links a {
   margin: 0 0.5em 0 0;
   color: rgb(224, 224, 255);

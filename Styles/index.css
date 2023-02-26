@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
     /* border: red solid 1px; */
 }
 
@@ -43,12 +42,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     min-height: 100vh;
     padding: 2em 5vw;
 }
 
-/* ----- main ----- */
 .sections {
     padding: 2em 0;
 }
@@ -59,12 +56,10 @@ main {
     font-size: 1.5em;
 }
 
-/* --- Card --- */
 #card {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 70%;
 }
 
@@ -79,14 +74,11 @@ main {
     font-size: 1.5em;
 }
 
-/* --- Nav --- */
 #nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 100%;
-
     text-align: center;
 }
 
@@ -99,7 +91,6 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-
     width: 50%;
 }
 
@@ -111,12 +102,10 @@ main {
 
 #nav a {
     display: flex;
-    
     text-decoration: none;
     color: #ffffff;
     font-size: 1.1em;
     padding: .5em .5em;
-    
     cursor: pointer;
 }
 
@@ -137,18 +126,14 @@ main {
     width: 10%;
 }
 
-/* ----- footer ----- */
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     height: 7em;
-
     text-align: center;
     background-color: #101010;
-
     user-select: none;
 }
 
