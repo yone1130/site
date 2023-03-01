@@ -1,43 +1,45 @@
 <!--
 
-    404.html | HTTP 404 | Yone Homepage
+    404.html | HTTP 404 | Yone Site
 
     (c) 2022-2023 よね/Yone
 
     No modification or reproduction of any kind is permitted.
     改変や複製を一切禁じます。
 
- -->
+-->
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not found - Yone Homepage</title>
-    <meta name="color-scheme" content="dark light">
+    <title>Yone Site</title>
 
     <base href="https://www.yoneyo.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap">
-    <link rel="stylesheet" href="./Styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/404.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./Scripts/main.js"></script>
 </head>
 
 <body>
+    <header></header>
+
     <main>
-        <article id="main" style="text-align: center;">
-            <span style="margin-bottom: .5em; font-size: 2em;">404 Not found</span>
-
-            <p style="margin-bottom: 1em;">
-                指定されたページがありません。
-            </p>
-
-            <a href="./" style="color: #ffffff;">トップへ</a>
-        </article>
+        <h1 class="title">404 Not found</h1>
+        <p class="des">
+            指定されたページがありません。
+        </p>
+        <a href="./">ホームへ</a>
     </main>
 
-    <footer>
-        <span>&copy; 2022-2023 よね/Yone</span>
-    </footer>
+    <footer></footer>
 </body>
+
 </html>

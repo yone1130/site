@@ -1,0 +1,136 @@
+/*
+
+    main.css | Yone Site
+
+    (c) 2022-2023 よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #ffffff;
+    color: #202020;
+}
+
+header {
+    position: fixed;
+    top: 20px;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 4em;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    box-shadow: rgba(0, 0, 0, .2) 0px 1px 2px 2px;
+    user-select: none;
+}
+
+header .wrapper {
+    width: 100%;
+    height: 70%;
+}
+
+header .wrapper ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+header .wrapper ul li {
+    width: 33%;
+    height: 100%;
+    margin: 0 1em 0 1em;
+    border-radius: 3em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+header .wrapper ul li:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+header .wrapper ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    color: #202020;
+}
+
+main {
+    min-height: 100vh;
+    padding-top: 7em;
+}
+
+footer {
+    width: 100%;
+    height: 7em;
+    background-color: #808080;
+    user-select: none;
+}
+
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+footer .wrapper span {
+    color: #ffffff;
+}
+
+.button {
+    display: block;
+    margin-top: 2em;
+    padding: .7em;
+    border-radius: .5em;
+    background-color: #404040;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, .3) 0px 4px 4px 4px;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, .3) 0px 4px 2px 2px;
+}
+
+@media (max-width: 769px) {
+    header {
+        left: 5%;
+        width: 90%;
+    }
+
+    header .wrapper ul li {
+        width: 33%;
+        height: 100%;
+        margin: 0 .5em 0 .5em;
+        border-radius: 3em;
+        text-align: center;
+        background-color: rgba(0, 0, 64, .1);
+    }
+}

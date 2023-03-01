@@ -1,6 +1,6 @@
 /*
 
-    index.css | Yone Homepage
+    index.css | Yone Site
 
     (c) 2022-2023 よね/Yone
 
@@ -8,137 +8,167 @@
     改変や複製を一切禁じます。
 
 */
-@charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    /* border: red solid 1px; */
-}
-
-body {
-    background-color: #101020;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-a, img {
-    user-select: none;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-}
-
-/* ---------- Main ---------- */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2em 5vw;
+    background-color: #e0e0e0;
 }
 
-.sections {
-    padding: 2em 0;
-}
-
-.sectionTitle {
-    margin-bottom: .5em;
+main .sections .sectionTitle {
+    margin-bottom: 2em;
     text-align: center;
-    font-size: 1.5em;
+    color: #4040f0;
 }
 
 #card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    min-height: 30vh;
+    padding: 7em 10vw;
 }
 
 #card img {
-    display: flex;
-    width: 10em;
-    border-radius: 50%;
+    width: 8em;
+    border-radius: 100%;
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 
 #card span {
-    margin-top: .5em;
+    display: block;
+    margin-top: 1em;
     font-size: 1.5em;
-}
-
-#nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    font-weight: 700;
+    animation-name: fadein;
+    animation-duration: 1.5s;
     text-align: center;
 }
 
-#nav h2 {
-    padding: 1em 0;
-}
-
-#nav ol {
+#about {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
-    width: 50%;
+    align-items: center;
+    padding: 7em 10vw;
+    background-color: #ffffff;
 }
 
-#nav ol li {
-    margin-bottom: 2em;
-    border-bottom: 1px #ffffff solid;
-    width: 100%;
+#about table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 64, .1);
 }
 
-#nav a {
+#about table tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 64, .05);
+}
+
+#about table tbody th,
+#about table tbody td {
+    min-width: 10em;
+    padding: .5em 2em;
+}
+
+#links {
     display: flex;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.1em;
-    padding: .5em .5em;
-    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
+    padding: 7em 10vw;
 }
 
-#nav a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+#links ol {
+    display: flex;
+    height: 8em;
 }
 
-#nav a .name {
-    display: block;
-    margin: 0;
-    width: 90%;
-    text-align: left;
+#links ol li {
+    display: flex;
+    margin: 1em;
+    width: 8em;
+    height: 100%;
 }
 
-#nav a .material-symbols-outlined {
-    display: block;
-    margin: 0;
-    width: 10%;
-}
-
-footer {
+#links ol li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 7em;
-    text-align: center;
-    background-color: #101010;
-    user-select: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    color: #020202;
 }
 
-@media (max-width: 1024px) {
-    #nav ol {
-        width: 100%;
+#links ol li a img {
+    width: 3em;
+    border-radius: 20%;
+    text-align: center;
+}
+
+#links ol li a span {
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+}
+
+#works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em 10vw;
+    background-color: #ffffff;
+}
+
+#works .des {
+    margin-top: 1em;
+    text-align: center;
+}
+
+#works .ydits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em 10vw;
+}
+
+#contact .des {
+    text-align: center;
+}
+
+#contact .notice {
+    margin-top: 3em;
+    color: #f04040;
+}
+
+#contact .policy {
+    margin: 1em;
+    text-decoration: underline;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 769px) {
+    #links {
+        height: 40em;
+    }
+
+    #links ol {
+        flex-direction: column;
     }
 }

@@ -2,7 +2,6 @@
 # Yone Site
 
 ## About | 概要
-
 よね/Yone のサイトです。
 
 ## 使用技術
@@ -17,8 +16,7 @@
 - Visual Studio Code
 
 #### 公開
-- GitHub Pages
+- Clloudflare Pages
 
 ## LICENCE | ライセンス
-
-個人用およびGitHub Pages公開用のため、**ライセンスは置いておらず、改変や複製は一切禁止しています。**
+個人用およびGitHub Pages公開用のため、**ライセンスは置いておらず、改変は一切禁止しています。**
