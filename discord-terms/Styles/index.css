@@ -18,8 +18,10 @@ body {
     color: #010101;
 }
 
-/* ---------- Main ---------- */
-/* ----- hero ----- */
+main {
+    padding-bottom: 3em;
+}
+
 #hero {
     padding: 5em 0;
     background-color: #010101;

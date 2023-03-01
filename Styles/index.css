@@ -130,6 +130,11 @@ main .sections .sectionTitle {
     height: 20em;
 }
 
+#works .ydits a:hover {
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, .3) 0px 4px 2px 2px;
+}
+
 #contact {
     display: flex;
     flex-direction: column;
