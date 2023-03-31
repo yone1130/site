@@ -1,6 +1,6 @@
 /*
 
-    index.html | Yone Discord terms
+    index.html | discord-terms | Yone Site
 
     (c) 2022-2023 よね/Yone
 
@@ -42,6 +42,7 @@ main {
 #term_main {
     padding: 0 10vw;
 }
+
 #term_main section {
     padding: 2em 0;
 }
@@ -72,22 +73,22 @@ main {
 }
 
 #endWord {
-  text-align: right;
+    text-align: right;
 }
 
 /* ----- footer ----- */
 footer {
-  height: 6em;
-  background-color: #cccccc;
-  user-select: none;
+    height: 6em;
+    background-color: #cccccc;
+    user-select: none;
 }
 
 footer>.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }

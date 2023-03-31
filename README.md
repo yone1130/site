@@ -1,22 +1,16 @@
 
 # Yone Site
 
-## About | 概要
+## About
 よね/Yone のサイトです。
 
-## 使用技術
+## Usage Technology
 
-#### 言語
+#### Langages
 - HTML5/CSS3
 
-#### コード管理
-- Git/GitHub
-
-#### 開発
-- Visual Studio Code
-
-#### 公開
+#### Build & Deploy
 - Clloudflare Pages
 
-## LICENCE | ライセンス
-個人用およびGitHub Pages公開用のため、**ライセンスは置いておらず、改変は一切禁止しています。**
+## LICENCE
+サイト公開用のため、**ライセンスは置いておらず、改変は一切禁止しています。**

@@ -9,48 +9,48 @@
 
 */
 main section {
-  margin: 2em 10vw 5em 10vw;
+    margin: 2em 10vw 5em 10vw;
 }
 
 .title {
-  margin: 2em 0 0 0;
-  padding: 0;
-  text-align: center;
-  font-size: 1.2em;
+    margin: 2em 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 main section .before {
-  margin: 2em 6vw;
+    margin: 2em 6vw;
 }
 
 main .main div {
-  margin: 4em 0 0 0;
+    margin: 4em 0 0 0;
 }
 
 main h2 {
-  margin: 1em 0 0.5em 0;
-  font-size: 1.2em;
+    margin: 1em 0 0.5em 0;
+    font-size: 1.2em;
 }
 
 main .main p {
-  margin: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 main ol {
-  margin: 0;
-  padding: 0 0 0 0;
-  list-style: none;
+    margin: 0;
+    padding: 0 0 0 0;
+    list-style: none;
 }
 
 main ul {
-  margin: 0;
-  padding: 0 0 0 1.5em;
+    margin: 0;
+    padding: 0 0 0 1.5em;
 }
 
 main section .after {
-  margin: 3em 0;
+    margin: 3em 0;
 }
 
 main section .after span {
-  text-align: right;
+    text-align: right;
 }
