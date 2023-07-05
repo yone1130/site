@@ -1,0 +1,167 @@
+/*
+
+    index.css | contact | Yone Site
+
+    Copyright (c) 2022-2023 よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+@charset "UTF-8";
+
+#control {
+    width: calc(100% - 30em);
+    padding-top: 2em;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+#backButton {
+    padding: .2em;
+    border: none;
+    border-radius: 24px;
+    background-color: #00000000;
+    color: #202020ff;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#backButton:hover {
+    background-color: #c0c0c0ff;
+}
+
+#backButton:active {
+    color: #202020;
+}
+
+#main {
+    padding: 1em 30vw;
+}
+
+#pageTitle {
+    margin-bottom: 2em;
+    padding: .5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#pageTitle::after {
+    margin: 0.5em auto 0;
+    width: 50px;
+    height: 3px;
+    background-color: #808080;
+    /* border-radius: 1.5px; */
+    content: "";
+    display: block;
+}
+
+#form li {
+    padding: 1em .5em;
+}
+
+#form label {
+    display: block;
+    padding: .5em;
+}
+
+#form input {
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 1.2em);
+    height: calc(1.2em + 1.2em);
+    border: 2px solid #d0d0d0ff;
+    border-radius: .6em;
+    padding: 0 .6em;
+    font-size: 1.2em;
+    color: #404040ff;
+    transition: all .2s;
+}
+
+#form input:hover {
+    border: 2px solid #808080ff;
+}
+
+#form input:focus {
+    border: 2px solid #4040f0ff;
+}
+
+#formTypeTextArea {
+    display: none;
+    margin-top: 1em;
+}
+
+#formTypeTextArea.show {
+    display: block;
+}
+
+#form textarea {
+    display: block;
+    margin: 0 auto;
+
+    width: calc(100% - 1.2em);
+    height: calc(8em + 1.2em);
+    min-height: calc(3em + 1.2em);
+    max-height: calc(16em + 1.2em);
+    resize: vertical;
+
+    border-radius: .6em;
+    border: 2px solid #d0d0d0ff;
+
+    padding: .6em;
+    font-size: 1.2em;
+    color: #404040ff;
+    transition: all .2s;
+}
+
+#form textarea:hover {
+    border: 2px solid #808080ff;
+}
+
+#form textarea:focus {
+    border: 2px solid #4040f0ff;
+}
+
+#formSubmitButtonArea {
+    display: flex;
+    flex-direction: row-reverse;
+    width: calc(100% - 2em);
+    padding: 0 2em;
+}
+
+#formSubmitButton {
+    /* width: calc(); */
+    padding: 1em 3em;
+    border: 2px solid #202020;
+    border-radius: 3em;
+    background-color: #404040ff;
+    color: #ffffffff;
+    transition: all .2s;
+}
+
+#formSubmitButton:hover {
+    background-color: #00000000;
+    color: #202020;
+}
+
+@media (max-width: 1535px) {
+    #main {
+        padding: 2em 20vw;
+    }
+
+    #control {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #main {
+        padding: 2em 10vw;
+    }
+
+    #control {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}

@@ -17,6 +17,14 @@
     list-style: none;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
 body {
     min-height: 100vh;
     font-size: 14px;
@@ -63,6 +71,14 @@ header .wrapper span {
 main {
     min-height: 100vh;
     padding-top: 4.5em;
+}
+
+#notification,
+#pageNotification {
+    width: calc(100% - 1em);
+    overflow: auto;
+    background-color: #f0c080ff;
+    padding: .5em;
 }
 
 footer {
