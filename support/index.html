@@ -1,0 +1,77 @@
+<!--
+
+    index.html | support | Yone Site
+
+    Copyright (c) 2022-2023 よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート | Yone Site</title>
+
+    <base href="https://www.yoneyo.com/">
+
+    <link rel="shortcut icon" href="./images/yone-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./support/styles/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="./scripts/main.js" async></script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <section id="notification"></section>
+
+        <section id="main">
+            <h1 id="pageTitle">よね/Yone を支援する</h1>
+
+            <section id="note">
+                <p>支援される前に必ず <a href="./support/terms/">支援に関する規定</a> をご確認ください。</p>
+            </section>
+
+            <section id="typeList">
+                <h2 class="sectionTitle">受け付けている支援方法</h2>
+                <ul>
+                    <li id="paymentPayPay">
+                        <a href="./support/paypay/">
+                            <span>PayPay送金</span>
+                            <img class="payment-logo" src="https://image.paypay.ne.jp/page/notice-merchant/entry/20181016/159/img_logo_1.jpg?_ga=2.142954801.503477996.1689231061-1092895403.1687423828" alt="PayPay Logo">
+                        </a>
+                    </li>
+                    <li id="paymentKyash">
+                        <a href="./support/kyash/">
+                            <span>Kyash送金</span>
+                            <img class="payment-logo" src="./support/images/kyash-logo.png" alt="Kyash Logo">
+                        </a>
+                    </li>
+                    <li id="paymentMinnaNoGinko">
+                        <a href="./support/bank/">
+                            <span class="">ことら送金<br><span style="font-size: .8rem;">他行からも可</span></span>
+                            <img class="payment-logo" src="./support/images/minna-no-ginko_logo.jpg" alt="" style="margin-top: 1em;">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
