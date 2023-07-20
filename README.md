@@ -14,5 +14,5 @@
 #### Build & Deploy
 - Cloudflare Pages
 
-## LICENCE
+## LICENSE
 サイト公開用のため、**ライセンスは置いておらず、改変は一切禁止しています。**
