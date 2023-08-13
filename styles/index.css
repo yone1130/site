@@ -65,7 +65,7 @@ main .sections .sectionTitle {
 
 #about table tbody th,
 #about table tbody td {
-    min-width: 10em;
+    min-width: 5em;
     padding: .5em 2em;
 }
 
@@ -79,14 +79,18 @@ main .sections .sectionTitle {
 
 #links ol {
     display: flex;
-    height: 8em;
 }
 
 #links ol li {
     display: flex;
     margin: 1em;
-    width: 8em;
+    width: 7em;
     height: 100%;
+    border-radius: .5rem;
+}
+
+#links ol li:hover {
+    background-color: #80808040;
 }
 
 #links ol li a {
@@ -102,7 +106,7 @@ main .sections .sectionTitle {
 
 #links ol li a img {
     width: 3em;
-    border-radius: 20%;
+    border-radius: 10%;
     text-align: center;
 }
 
@@ -166,6 +170,15 @@ main .sections .sectionTitle {
     text-decoration: underline;
 }
 
+#copyright {
+    text-align: left;
+}
+
+#copyright>p {
+    font-size: .7em;
+    margin: .5em 0;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -179,8 +192,8 @@ main .sections .sectionTitle {
 }
 
 @media (max-width: 769px) {
-    #links {
-        height: 40em;
+    #links>.content {
+        display: flex;
     }
 
     #links ol {
