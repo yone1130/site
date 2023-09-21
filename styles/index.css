@@ -2,7 +2,7 @@
 
     index.css | Yone Site
 
-    Copyright (c) 2022-2023 よね/Yone
+    (c) よね/Yone
 
     No modification or reproduction of any kind is permitted.
     改変や複製を一切禁じます。
@@ -10,15 +10,26 @@
 */
 
 main {
-    background-color: #e0e0e0;
+    --section-odd-background-color: #e0e0e0ff;
+    --font-color-bule: #40a0f0ff;
+    --header-height: 4.5em;
 }
 
-main .sections .sectionTitle {
+main a {
+    color: var(--font-color-bule);
+    text-decoration: none;
+}
+
+main>.sections:nth-of-type(odd) {
+    background-color: var(--section-odd-background-color);
+}
+
+main>.sections>.sectionTitle {
     margin-bottom: 2em;
     border-bottom: 2px solid #c0c0c0;
     padding: .5em;
     text-align: center;
-    color: #4040f0;
+    color: var(--font-color-bule);
 }
 
 #card {
@@ -26,8 +37,11 @@ main .sections .sectionTitle {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
-    padding: 7em 10vw;
+    height: calc(60vh - var(--header-height));
+    min-height: 32em;
+    max-height: 64em;
+    padding: 0 10vw;
+    user-select: none;
 }
 
 #card img {
@@ -41,7 +55,7 @@ main .sections .sectionTitle {
     display: block;
     margin-top: 1em;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     animation-name: fadein;
     animation-duration: 1.5s;
     text-align: center;
@@ -52,7 +66,6 @@ main .sections .sectionTitle {
     flex-direction: column;
     align-items: center;
     padding: 7em 10vw;
-    background-color: #ffffff;
 }
 
 #about table tbody tr:nth-of-type(odd) {
@@ -73,7 +86,6 @@ main .sections .sectionTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 30vh;
     padding: 7em 10vw;
 }
 
@@ -81,36 +93,38 @@ main .sections .sectionTitle {
     display: flex;
 }
 
-#links ol li {
+#links ol>li {
     display: flex;
-    margin: 1em;
+    margin: .8em;
     width: 7em;
     height: 100%;
     border-radius: .5rem;
 }
 
-#links ol li:hover {
+#links ol>li:hover {
     background-color: #80808040;
 }
 
-#links ol li a {
+#links ol>li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 1em);
+    height: calc(100% - 1em);
     border-radius: 20%;
+    padding: .5em;
     color: #020202;
+    text-decoration: none;
 }
 
-#links ol li a img {
+#links ol>li a img {
     width: 3em;
     border-radius: 10%;
     text-align: center;
 }
 
-#links ol li a span {
+#links ol>li a span {
     display: block;
     margin-top: 1em;
     text-align: center;
@@ -121,7 +135,6 @@ main .sections .sectionTitle {
     flex-direction: column;
     align-items: center;
     padding: 7em 10vw;
-    background-color: #ffffff;
 }
 
 #works .des {
@@ -136,11 +149,6 @@ main .sections .sectionTitle {
     height: 20em;
 }
 
-#works .ydits a:hover {
-    background-color: #000000;
-    box-shadow: rgba(0, 0, 0, .3) 0px 4px 2px 2px;
-}
-
 #support {
     display: flex;
     flex-direction: column;
@@ -153,7 +161,6 @@ main .sections .sectionTitle {
     flex-direction: column;
     align-items: center;
     padding: 7em 10vw;
-    background-color: #ffffffff;
 }
 
 #contact .des {
@@ -167,16 +174,15 @@ main .sections .sectionTitle {
 
 #contact .policy {
     margin: 1em;
-    text-decoration: underline;
 }
 
 #copyright {
-    text-align: left;
+    padding: 1em 1em;
 }
 
 #copyright>p {
     font-size: .7em;
-    margin: .5em 0;
+    margin: .7em 0;
 }
 
 @keyframes fadein {

@@ -2,7 +2,7 @@
 
     main.css | Yone Site
 
-    Copyright (c) 2022-2023 よね/Yone
+    (c) よね/Yone
 
     No modification or reproduction of any kind is permitted.
     改変や複製を一切禁じます。
@@ -13,8 +13,21 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    /* list-style: none; */
+}
+
+:root {
+    --page-main-color: #ffffff;
+    --font-color-black: #202020;
+    --font-color-bule: #40a0f0ff;
+    --header-height: 4.5em;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--page-main-color);
+    color: var(--font-color-black);
 }
 
 .material-symbols-outlined {
@@ -25,97 +38,104 @@
         'opsz' 48
 }
 
-body {
-    min-height: 100vh;
-    font-size: 14px;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #ffffff;
-    color: #202020;
-}
-
 header {
     position: fixed;
     top: 0;
     left: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 100%;
-    height: 4.5em;
-    border-radius: 0 0 1em 1em;
-    overflow: hidden;
-    background-color: #f0f0f0;
+    height: var(--header-height);
+    /* border-radius: 0 0 1em 1em; */
     box-shadow: rgba(0, 0, 0, .2) 0px 1px 2px 2px;
+    overflow: hidden;
+
+    background-color: #f0f0f0;
+
+    z-index: 1;
+
     user-select: none;
 }
 
 header .wrapper {
     display: flex;
     align-items: center;
+
     width: 100%;
     max-width: 1024px;
-    height: 100%;
+    height: calc(100% - 2em);
+
     padding: 0 2em;
 }
 
-header .wrapper img {
-    margin-right: 1em;
-    width: 3.5em;
-    border-radius: 1em;
+#headerLogo {
+    display: flex;
+    align-items: center;
 }
 
-header .wrapper span {
+#headerLogo>.logo {
+    margin-right: 1em;
+    height: 3.25em;
+    border-radius: calc(20%);
+}
+
+#headerLogo>.title {
     text-align: center;
+    font-size: 1.2em;
 }
 
 main {
     min-height: 100vh;
-    padding-top: 4.5em;
-}
-
-#notification,
-#pageNotification {
-    width: calc(100% - 1em);
-    overflow: auto;
-    background-color: #f0c080ff;
-    padding: .5em;
+    padding-top: var(--header-height);
 }
 
 footer {
     width: 100%;
     height: 7em;
-    background-color: #808080;
+    background-color: #202020;
     user-select: none;
 }
 
-footer .wrapper {
+footer>.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    text-align: center;
 }
 
-footer .wrapper span {
+#footerCopyright {
+    text-align: center;
     color: #ffffff;
 }
 
 .button {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     margin-top: 2em;
-    padding: .7em;
-    border-radius: .5em;
-    background-color: #404040;
+
+    border-radius: 1.4em;
     border: none;
+
+    padding: .7em 1.4em;
+    background-color: #404040;
     font-size: 1.2em;
     font-weight: 600;
     color: #ffffff;
-    box-shadow: rgba(0, 0, 0, .3) 0px 4px 4px 4px;
+    text-decoration: none;
+
     transition: all .5s;
+    user-select: none;
 }
 
 .button:hover {
-    background-color: #000000;
-    box-shadow: rgba(0, 0, 0, .3) 0px 4px 2px 2px;
+    margin-bottom: .2em;
+    background-color: #f0f0f0ff;
+    padding: .6em 1.3em;
+    color: var(--font-color-black);
 }
