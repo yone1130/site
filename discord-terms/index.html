@@ -11,18 +11,89 @@
 <!DOCTYPE html>
 <html lang="ja-JP">
 
-<head>
+<head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="よね/Yone が運営しているDiscordサーバーのガイドラインを記載しているページです。">
+
     <title>よね/Yone Discordサーバーガイドライン</title>
 
+    <meta property="og:url" content="https://www.yoneyo.com/discord-terms/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Yone Site">
+    <meta property="og:title" content="よね/Yone Discordサーバーガイドライン">
+    <meta property="og:description" content="よね/Yone が運営しているDiscordサーバーのガイドラインを記載しているページです。">
+    <meta property="og:image" content="https://www.yoneyo.com/images/yone-icon.png">
+
     <base href="https://www.yoneyo.com/">
+
     <link rel="shortcut icon" href="./images/yone-icon.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./discord-terms/styles/index.css">
+
+    <style>
+        @charset "UTF-8";
+
+        #hero {
+            background-color: #010101;
+            padding: 5em 0;
+            color: #ffffffff;
+        }
+
+        #main {
+            font-weight: 200;
+            padding: 3em 10vw;
+        }
+
+        #pageTitle {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        #main section {
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        #termBefore {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        #termMain .sectionTitle {
+            margin-bottom: .5em;
+            font-size: 1.2em;
+        }
+
+        #termMain h3 {
+            font-size: 1em;
+            margin-bottom: .5em;
+        }
+
+        #termMain ol,
+        #termMain ul {
+            margin-left: 1em;
+        }
+
+        #termMain li {
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+
+        #termAfter {
+            text-align: right;
+        }
+
+        #termAfter>p {
+            display: block;
+            padding-top: .25em;
+            padding-bottom: .25em;
+        }
+    </style>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
@@ -38,7 +109,7 @@
         </section>
 
         <section id="main">
-            <section id="term_before">
+            <section id="termBefore">
                 <p>
                     よね/Yone のサーバーに参加いただきありがとうございます。<br>
                     当サーバーを利用するにあたって、本ガイドラインを守って、利用して頂く必要があります。<br>
@@ -46,48 +117,78 @@
                 </p>
             </section>
 
-            <section id="term_main">
+            <section id="termMain">
                 <section>
-                    <h2>1. 定義</h2>
+                    <h2 class="sectionTitle">1. 定義</h2>
+
                     <ol>
                         <li>
                             <h3>「当方」</h3>
-                            本サーバーの設立・運営を行っている、よね/Yoneを指します。
+                            <p>
+                                本サーバーの設立・運営を行っている、よね/Yoneを指します。
+                            </p>
                         </li>
+
                         <li>
                             <h3>「メンバー」</h3>
-                            本サーバーに参加されているすべての方を指します。
+                            <p>
+                                本サーバーに参加されているすべての方を指します。
+                            </p>
                         </li>
                         <li>
                             <h3>「他のメンバー」</h3>
-                            本サーバーに参加されているあなた以外のすべての方を指します。
+                            <p>
+                                本サーバーに参加されているあなた以外のすべての方を指します。
+                            </p>
                         </li>
                         <li>
                             <h3>「第三者」</h3>
-                            メンバー以外の方を指します。
+                            <p>
+                                メンバー以外の方を指します。
+                            </p>
                         </li>
                         <li>
                             <h3>「個人情報」</h3>
-                            個人を特定することができる情報を指します。また、それ単体では特定できないものでも、他の情報と組み合わせることにより特定可能になりうる情報を指します。
+                            <p>
+                                個人を特定することができる情報を指します。また、それ単体では特定できないものでも、他の情報と組み合わせることにより特定可能になりうる情報を指します。
+                            </p>
                         </li>
                     </ol>
                 </section>
 
                 <section>
-                    <h2>2. 本ガイドラインの適用範囲</h2>
+                    <h2 class="sectionTitle">2. 本ガイドラインの適用範囲</h2>
                     <ol>
-                        <li>メンバーは、本サーバーを利用するには本ガイドラインに同意しなければなりません。</li>
-                        <li>メンバーは、本サーバーを利用した時点で本ガイドラインが適用されるものとします。</li>
-                        <li>メンバーは、本ガイドラインの定めにしたがって本サーバーを利用するものとします。</li>
+                        <li>
+                            <p>
+                                メンバーは、本サーバーを利用するには本ガイドラインに同意しなければなりません。
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                メンバーは、本サーバーを利用した時点で本ガイドラインが適用されるものとします。
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                メンバーは、本ガイドラインの定めにしたがって本サーバーを利用するものとします。
+                            </p>
+                        </li>
                     </ol>
                 </section>
 
                 <section>
-                    <h2>3. 参加要件</h2>
-                    <p style="margin-bottom: .5em;">メンバーは、本サーバーを利用するにあたり、以下の要件を満たす必要があります。</p>
+                    <h2 class="sectionTitle">3. 参加要件</h2>
+
                     <ol>
-                        <li>年齢が満13歳以上であること</li>
+                        <li>
+                            <p style="margin-bottom: .5em;">メンバーは、本サーバーを利用するにあたり、以下の要件を満たす必要があります。</p>
+                            <ol>
+                                <li>年齢が満13歳以上であること</li>
+                            </ol>
+                        </li>
                     </ol>
+
                     <p style="color: #ff8080; margin-top: .5em;">
                         要件が満たせない場合には、速やかに本サーバーから脱退いただくようお願いいたします。<br>
                         これらを偽って本サーバーに参加したことが判明した場合はキックもしくはBANをさせていただきますのでご了承下さい。
@@ -96,44 +197,49 @@
 
 
                 <section>
-                    <h2>4. 禁止事項</h2>
+                    <h2 class="sectionTitle">4. 禁止事項</h2>
 
                     <p style="margin-bottom: 1em;">
                         本サーバー内において、以下の行為を禁止とします。<br>
                         以下の行為を発見した場合、当方の判断に基づきタイムアウト、BAN等の処置をさせていただきます。<br>
-                        <span
-                            style="color: #ff8080;">また、本サーバー外（他サーバーや他のSNSプラットフォーム）において同様の行為を発見した場合に、当方の判断に基づき処置をさせていただく場合がございます。</span>
+                        <span style="color: #ff8080;">
+                            また、本サーバー外（他サーバーや他のSNSプラットフォーム）において同様の行為を発見した場合に、当方の判断に基づき処置をさせていただく場合がございます。
+                        </span>
                     </p>
 
                     <ol>
-                        <li>あなたの居住している国もしくは地域で定められている法令に反する行為</li>
-                        <li>裁判所の判決もしくは命令，または法令上拘束力のある行政措置に反する行為</li>
-                        <li>Discord利用規約に違反する行為</li>
-                        <li>当方、他のメンバーおよび第三者の著作権、商標権、特許権等の知的財産権、名誉権、プライバシー権、肖像権、人格権、またはその他法令上または契約上の権利を侵害する行為</li>
-                        <li>公序良俗に反する行為</li>
-                        <li>個人情報を含む内容を発言する行為</li>
-                        <li>差別的な内容を発言する行為</li>
-                        <li>暴言、中傷、脅迫または不快、侮辱的な発言をする行為</li>
-                        <li>露骨な性的コンテンツ（画像、動画、イラスト）を発言する行為</li>
-                        <li>露骨な性描写を言語で表現し、発言する行為</li>
-                        <li>当方、他のメンバーおよび第三者になりすます行為</li>
-                        <li>自殺、自傷行為、薬物乱用を誘引または助長する行為</li>
-                        <li>宗教活動または宗教団体への勧誘行為</li>
-                        <li>連投、スパム行為</li>
-                        <li>本サーバー及びその他のサーバーに支障を与える行為</li>
-                        <li>根拠のない物事を確定情報のように発言する行為</li>
-                        <li>@everyone及び@here を @管理者 の許可なく使用する行為</li>
-                        <li>次のようなユーザー名およびニックネームは使用してはいけません</li>
-                        <ul>
-                            <li>「everyone」および「here」</li>
-                            <li>卑猥または不快なもの</li>
-                            <li>差別的または中傷的な文章が含まれるもの</li>
-                        </ul>
-                        <li>次のようなユーザーアイコンは使用してはいけません</li>
-                        <ul>
-                            <li>卑猥または不快なもの</li>
-                        </ul>
-                        <li>その他当方が不適切と判断した行為</li>
+                        <li><p>あなたの居住している国もしくは地域で定められている法令に反する行為</p></li>
+                        <li><p>裁判所の判決もしくは命令，または法令上拘束力のある行政措置に反する行為</p></li>
+                        <li><p>Discord利用規約に違反する行為</p></li>
+                        <li><p>当方、他のメンバーおよび第三者の著作権、商標権、特許権等の知的財産権、名誉権、プライバシー権、肖像権、人格権、またはその他法令上または契約上の権利を侵害する行為</p></li>
+                        <li><p>公序良俗に反する行為</p></li>
+                        <li><p>個人情報を含む内容を発言する行為</p></li>
+                        <li><p>差別的な内容を発言する行為</p></li>
+                        <li><p>暴言、中傷、脅迫または不快、侮辱的な発言をする行為</p></li>
+                        <li><p>露骨な性的コンテンツ（画像、動画、イラスト）を発言する行為</p></li>
+                        <li><p>露骨な性描写を言語で表現し、発言する行為</p></li>
+                        <li><p>当方、他のメンバーおよび第三者になりすます行為</p></li>
+                        <li><p>自殺、自傷行為、薬物乱用を誘引または助長する行為</p></li>
+                        <li><p>宗教活動または宗教団体への勧誘行為</p></li>
+                        <li><p>連投、スパム行為</p></li>
+                        <li><p>本サーバー及びその他のサーバーに支障を与える行為</p></li>
+                        <li><p>根拠のない物事を確定情報のように発言する行為</p></li>
+                        <li><p>@everyone及び@here を @管理者 の許可なく使用する行為</p></li>
+                        <li>
+                            <p>次のようなユーザー名およびニックネームは使用してはいけません</p>
+                            <ul>
+                                <li><p>「everyone」および「here」</p></li>
+                                <li><p>卑猥または不快なもの</p></li>
+                                <li><p>差別的または中傷的な文章が含まれるもの</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>次のようなユーザーアイコンは使用してはいけません</p>
+                            <ul>
+                                <li><p>卑猥または不快なもの</p></li>
+                            </ul>
+                        </li>
+                        <li><p>その他当方が不適切と判断した行為</p></li>
                     </ol>
                 </section>
 
@@ -153,7 +259,6 @@
                                 過度な送信は個人チャンネルで行ってください。<br>
                                 なお、詐欺サイト、違法サイト等はスパムとして扱われます。
                             </p>
-                            </ul>
                         </li>
                         <li>
                             <h3>NSFWチャンネルについて</h3>
@@ -162,8 +267,8 @@
                             </p>
                             <h4>ただし以下のコンテンツは発言してはいけません。</h4>
                             <ul>
-                                <li>実写による性的コンテンツで、性器等が含まれるもの</li>
-                                <li>児童ポルノに該当するもの</li>
+                                <li><p>実写による性的コンテンツで、性器等が含まれるもの</p></li>
+                                <li><p>児童ポルノに該当するもの</p></li>
                             </ul>
                         </li>
                         <li>
@@ -186,31 +291,23 @@
                 <section>
                     <h2>6. 免責</h2>
                     <ol>
-                        <li>当方は、本サーバーの利用によって生じた損害の責任は一切負わないものとします。</li>
-                        <li>当方は、メンバーに事前に通知することなく、本サーバーの一部もしくは全部の運営を変更または停止できるものとし、それに伴うユーザーへのいかなる損害の責任は一切負わないものとします。
-                        </li>
+                        <li><p>当方は、本サーバーの利用によって生じた損害の責任は一切負わないものとします。</p></li>
+                        <li><p>当方は、メンバーに事前に通知することなく、本サーバーの一部もしくは全部の運営を変更または停止できるものとし、それに伴うユーザーへのいかなる損害の責任は一切負わないものとします。</p></li>
                     </ol>
                 </section>
 
                 <section>
                     <h2>7. 本ガイドラインの変更</h2>
                     <ol>
-                        <li>当方は、メンバーに個別の同意を得ることなく、本ガイドラインの内容を変更することができるものとします。</li>
-                        <li>当方は、本ガイドラインの変更時に、その内容について以下のウェブサイトに表示し，メンバーに通知します。</li>
+                        <li><p>当方は、メンバーに個別の同意を得ることなく、本ガイドラインの内容を変更することができるものとします。</p></li>
+                        <li><p>当方は、本ガイドラインの変更時に、その内容について サーバーのインフォメーションチャンネル に表示し，メンバーに通知します。</p></li>
                     </ol>
-                    <ul>
-                        <li><a
-                                href="https://discord.com/channels/1067751035340324946/1067752227973910538">本サーバーのインフォメーションチャンネル</a>
-                            にてお知らせします。</li>
-                    </ul>
                 </section>
             </section>
 
-            <section id="term_after">
-                <span id="endWord">
-                    <p>以上</p>
-                </span>
-                <p id="update">2023年2月8日 更新</p>
+            <section id="termAfter">
+                <span>以上</span>
+                <span>2023年2月8日 更新</span>
             </section>
         </section>
     </main>
