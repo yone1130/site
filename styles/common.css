@@ -1,6 +1,8 @@
+@charset "UTF-8";
+
 /*
 
-    main.css | Yone Site
+    Yone Site
 
     (c) よね/Yone
 
@@ -8,7 +10,6 @@
     改変や複製を一切禁じます。
 
 */
-@charset "UTF-8";
 
 * {
     margin: 0;
@@ -160,4 +161,30 @@ footer>.wrapper {
 
 .button-control:active {
     background-color: #00000040;
+}
+
+.errors-wrapper {
+    --this-padding-top-bottom: 3rem;
+    padding: var(--this-padding-top-bottom) 10vw;
+    min-height: initial;
+    height: calc(100vh - var(--header-height) - var(--footer-height) - var(--this-padding-top-bottom) * 2);
+    overflow: auto;
+}
+
+.errors-content {
+    text-align: center;
+}
+
+.errors-page-title {
+    font-size: 2rem;
+}
+
+.errors-text-body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.errors-back-button {
+    margin: 2rem auto 0 auto;
+    width: fit-content;
 }

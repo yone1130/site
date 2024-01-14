@@ -1,10 +1,16 @@
+@charset "UTF-8";
+
 /*
 
-    index.css | support/styles | Yone site
+    Yone Site
 
     (c) よね/Yone
 
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
 */
+
 h2 {
     font-size: 1.2em;
 }

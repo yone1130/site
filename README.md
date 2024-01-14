@@ -6,13 +6,13 @@
 
 ## Usage Technology
 
-#### Langages / Libraries
+#### Languages / Libraries
 - HTML5/CSS3
 - JavaScript
-- jQuery
+- jQuery v3.6.3
 
 #### Build & Deploy
 - Cloudflare Pages
 
 ## LICENSE
-**ライセンスは置いておらず、改変は一切禁止しています。**
+**No Licensed. No modification or reproduction of any kind is permitted.**
