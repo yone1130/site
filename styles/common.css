@@ -2,7 +2,7 @@
 
 /*
 
-    Yone Site
+    Yone Website
 
     Copyright (c) よね/Yone
 
@@ -10,11 +10,6 @@
     改変や複製を一切禁じます。
 
 */
-
-* {
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --page-main-color: #ffffffff;
@@ -24,6 +19,17 @@
     --footer-height: 7em;
     --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: unset;
+    font-weight: unset;
+}
+
 
 body {
     font-size: 14px;
@@ -62,7 +68,7 @@ header {
     user-select: none;
 }
 
-header .wrapper {
+.header-wrapper {
     display: flex;
     align-items: center;
 
@@ -73,18 +79,18 @@ header .wrapper {
     padding: 0 2em;
 }
 
-#headerLogo {
+.header-logo {
     display: flex;
     align-items: center;
 }
 
-#headerLogo>.logo {
+.header-logo-image {
     margin-right: 1em;
     height: 3.25em;
     border-radius: calc(20%);
 }
 
-#headerLogo>.title {
+.header-title {
     text-align: center;
     font-size: 1.2em;
 }
@@ -101,7 +107,7 @@ footer {
     user-select: none;
 }
 
-footer>.wrapper {
+.footer-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +115,7 @@ footer>.wrapper {
     height: 100%;
 }
 
-#footerCopyright {
+.footer-copyright {
     text-align: center;
     color: #ffffff;
 }

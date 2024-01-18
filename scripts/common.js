@@ -1,6 +1,6 @@
 /*
  * 
- * Yone Site
+ * Yone Website
  * 
  * Copyright (c) よね/Yone
  * 

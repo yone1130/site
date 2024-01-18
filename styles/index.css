@@ -2,7 +2,7 @@
 
 /*
 
-    Yone Site
+    Yone Website
 
     Copyright (c) よね/Yone
 
@@ -30,6 +30,7 @@ main>.sections>.sectionTitle {
     margin-bottom: 2em;
     border-bottom: 2px solid #c0c0c0;
     padding: .5em;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--font-color-bule);
 }
@@ -139,16 +140,24 @@ main>.sections>.sectionTitle {
     padding: 7em 10vw;
 }
 
-#works .des {
-    margin-top: 1em;
-    text-align: center;
+#works>.sectionTitle {
+    margin: 0;
 }
 
-#works .ydits {
+.works-item:not(:first-child) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20em;
+    padding: 2rem 0;
+}
+
+.works-item-title {
+    font-size: 1.2rem;
+}
+
+.works-item-text {
+    margin-top: 1em;
+    text-align: center;
 }
 
 #support {
