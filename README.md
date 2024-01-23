@@ -1,23 +1,17 @@
 
 # Yone Website
 
-## About
+## Overview
 
 Yone's Website.  
 よね/Yone のウェブサイトです。
 
-## Usage Technology
+## Usage
 
-#### Languages / Libraries
-
-- HTML5/CSS
-- JavaScript
-- jQuery v3.7.1
-
-#### Build & Deploy
-
-- Cloudflare Pages
+`src/pages/` をデプロイします。
 
 ## LICENSE
 
 **No Licensed. No modification or reproduction of any kind is permitted.**
+
+Copyright (c) よね/Yone
