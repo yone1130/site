@@ -11,9 +11,11 @@
 
 'use strict';
 
-void (() => {
-    $(() => {
+(() => {
+    const loadCommonElements = () => {
         $('header').load('./elements/header.html');
         $('footer').load('./elements/footer.html');
-    });
+    }
+
+    $(() => loadCommonElements());
 })();
