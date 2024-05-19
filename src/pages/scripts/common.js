@@ -21,10 +21,10 @@
         </div>
     `;
 
-    function loadCommonElements() {
+    const loadCommonElements = () => {
         document.header.innerHTML = headerInnerHtml;
         $('footer').load('./elements/footer.html');
     }
 
-    $(() => loadCommonElements());
+    document.addEventListener("DOMContentLoaded", () => loadCommonElements());
 })();
