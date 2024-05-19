@@ -12,8 +12,17 @@
 'use strict';
 
 (() => {
+    const headerInnerHtml = `
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <img class="header-logo-image" src="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" alt="Yone's icon">
+                <span class="header-title">よね/Yone</span>
+            </div>
+        </div>
+    `;
+
     const loadCommonElements = () => {
-        $('header').load('./elements/header.html');
+        document.header.innerHTML = headerInnerHtml;
         $('footer').load('./elements/footer.html');
     }
 
