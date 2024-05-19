@@ -21,7 +21,7 @@
         </div>
     `;
 
-    const loadCommonElements = () => {
+    function loadCommonElements() {
         document.header.innerHTML = headerInnerHtml;
         $('footer').load('./elements/footer.html');
     }
