@@ -22,7 +22,7 @@
     `;
 
     const loadCommonElements = () => {
-        document.header.innerHTML = headerInnerHtml;
+        document.body.header.innerHTML = headerInnerHtml;
         $('footer').load('./elements/footer.html');
     }
 
