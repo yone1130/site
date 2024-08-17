@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+
+    Yone Website
+
+    Copyright (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+
+.doc {
+    padding: 4rem 0;
+}
+
+.doc__content {
+    max-width: 1024px;
+    padding: 0 3rem;
+}
+
+.doc__title {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.doc__section__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.doc__li__title {
+    font-weight: 600;
+}

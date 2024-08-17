@@ -15,6 +15,9 @@
     --page-main-color: #ffffffff;
     --font-color-black: #404040ff;
     --font-color-bule: #40a0f0ff;
+    --page-font-size: 14px;
+    --page-font-weight: 400;
+    --page-main-font-family: 'Noto Sans JP', sans-serif;
     --header-height: 4.5em;
     --footer-height: 7em;
     --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -25,22 +28,55 @@
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: unset;
-    font-weight: unset;
-}
-
 html {
-    font-size: 14px;    
+    font-size: var(--page-font-size);
 }
 
 
 body {
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-size: var(--page-font-size);
+    font-weight: var(--page-font-weight);
+    font-family:var(--page-main-font-family);
     background-color: var(--page-main-color);
     color: var(--font-color-black);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    box-shadow: rgba(0, 0, 0, .2) 0px 1px 2px 2px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    user-select: none;
+}
+
+main {
+    min-height: var(--main-min-height);
+    margin-top: var(--header-height);
+}
+
+footer {
+    width: 100%;
+    height: var(--footer-height);
+    background-color: #202020;
+    user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: unset;
+    font-weight: unset;
 }
 
 .material-symbols-outlined {
@@ -49,27 +85,6 @@ body {
         'wght' 400,
         'GRAD' 0,
         'opsz' 48
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: var(--header-height);
-    box-shadow: rgba(0, 0, 0, .2) 0px 1px 2px 2px;
-    overflow: hidden;
-
-    background-color: #f0f0f0;
-
-    z-index: 1;
-
-    user-select: none;
 }
 
 .header-wrapper {
@@ -99,18 +114,6 @@ header {
     font-size: 1.2em;
 }
 
-main {
-    min-height: var(--main-min-height);
-    margin-top: var(--header-height);
-}
-
-footer {
-    width: 100%;
-    height: var(--footer-height);
-    background-color: #202020;
-    user-select: none;
-}
-
 .footer-wrapper {
     display: flex;
     align-items: center;
@@ -128,8 +131,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-top: 2em;
 
     border-radius: 1.4em;
     border: none;
@@ -173,28 +174,78 @@ footer {
     background-color: #00000040;
 }
 
-.errors-wrapper {
+.errors-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     --this-padding-top-bottom: 3rem;
-    padding: var(--this-padding-top-bottom) 10vw;
-    min-height: initial;
-    height: calc(100vh - var(--header-height) - var(--footer-height) - var(--this-padding-top-bottom) * 2);
+    min-height: calc(100dvh - var(--header-height) - var(--footer-height) - var(--this-padding-top-bottom) * 2);
+    padding: var(--this-padding-top-bottom);
+    gap: 2rem;
     overflow: auto;
 }
 
-.errors-content {
-    text-align: center;
-}
-
 .errors-page-title {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-.errors-text-body {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.section {
+    gap: 2rem;
 }
 
-.errors-back-button {
-    margin: 2rem auto 0 auto;
-    width: fit-content;
+.section--padding-top-bottom {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.section:nth-of-type(odd) {
+    background-color: var(--section-odd-background-color);
+}
+
+.section__title {
+    border-bottom: 2px solid #c0c0c0;
+    padding: .5em;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--font-color-bule);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-4rem {
+    gap: 4rem;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+.gap-1rem {
+    gap: 1rem;
+}
+
+.gap-half {
+    gap: .5em;
 }

@@ -6,6 +6,8 @@
 Yone's Website.  
 よね/Yone のウェブサイトです。
 
+[https://www.yoneyo.com/](https://www.yoneyo.com/) で公開しています。
+
 ## Usage
 
 `src/pages/` をデプロイします。
