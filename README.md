@@ -16,4 +16,4 @@ Yone's Website.
 
 **No Licensed. No modification or reproduction of any kind is permitted.**
 
-Copyright (c) よね/Yone
+Copyright (C) よね/Yone
