@@ -12,10 +12,8 @@
 'use strict';
 
 (() => {
-    const loadCommonElements = () => {
+    document.addEventListener("DOMContentLoaded", () => {
         $('header').load('./elements/header.html');
         $('footer').load('./elements/footer.html');
-    }
-
-    document.addEventListener("DOMContentLoaded", () => loadCommonElements());
+    });
 })();

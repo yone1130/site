@@ -186,7 +186,7 @@ h6 {
     overflow: auto;
 }
 
-.errors-page-title {
+.errors-page__title {
     font-size: 3rem;
     font-weight: bold;
 }
@@ -232,6 +232,11 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .gap-4rem {

@@ -49,6 +49,11 @@ main a {
     text-align: center;
 }
 
+.about__table {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
 .about__tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 64, .1);
 }
@@ -126,6 +131,8 @@ main a {
 }
 
 .contact__notice {
+    padding-left: 1em;
+    padding-right: 1em;
     color: #f04040;
 }
 
@@ -142,11 +149,12 @@ main a {
 }
 
 @media (max-width: 769px) {
-    #links>.content {
+    .links__content {
         display: flex;
+        flex-direction: row;
     }
 
-    #links ol {
+    .links__ol {
         flex-direction: column;
     }
 }
