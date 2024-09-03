@@ -1,15 +1,15 @@
 /*
- * 
+ *
  * Yone Website
- * 
+ *
  * Copyright (C) よね/Yone
- * 
+ *
  * No modification or reproduction of any kind is permitted.
  * 改変や複製を一切禁じます。
- * 
+ *
  */
 
-'use strict';
+"use strict";
 
 (() => {
     const langSelection = class {
@@ -17,33 +17,34 @@
             return ["ja-jp", "en-us"];
         }
 
-
         constructor() {
             this.getClientLang();
             this.changePageLang(this.pageLang);
             this.init();
         }
 
-
         getClientLang() {
             const langsMap = {
-                "ja": "ja-jp",
-                "en": "en-us"
-            }
+                ja: "ja-jp",
+                en: "en-us",
+            };
 
             const defaultLang = "en-us";
 
             this.pageLang = localStorage.getItem("lang");
 
-            if (this.pageLang !== null) { return; }
+            if (this.pageLang !== null) {
+                return;
+            }
 
-            const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
+            const userLang = (
+                navigator.language || navigator.userLanguage
+            ).toLowerCase();
 
             this.pageLang = langsMap[userLang] || defaultLang;
 
             localStorage.setItem("lang", this.pageLang);
         }
-
 
         changePageLang(lang) {
             switch (lang) {
@@ -73,18 +74,14 @@
             }
         }
 
-
         init() {
-            this.langs.forEach(lang => {
-                $(document).on('click', `#langsLists .${lang}`, () => {
+            this.langs.forEach((lang) => {
+                $(document).on("click", `#langsLists .${lang}`, () => {
                     this.changePageLang(lang);
-                }
-                );
-            }
-            );
+                });
+            });
         }
-    }
-
+    };
 
     $(() => new langSelection());
 })();

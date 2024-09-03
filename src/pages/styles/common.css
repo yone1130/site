@@ -17,10 +17,12 @@
     --font-color-bule: #40a0f0ff;
     --page-font-size: 14px;
     --page-font-weight: 400;
-    --page-main-font-family: 'Noto Sans JP', sans-serif;
+    --page-main-font-family: "Noto Sans JP", sans-serif;
     --header-height: 4.5em;
     --footer-height: 7em;
-    --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    --main-min-height: calc(
+        100vh - var(--header-height) - var(--footer-height)
+    );
 }
 
 * {
@@ -32,11 +34,10 @@ html {
     font-size: var(--page-font-size);
 }
 
-
 body {
     font-size: var(--page-font-size);
     font-weight: var(--page-font-weight);
-    font-family:var(--page-main-font-family);
+    font-family: var(--page-main-font-family);
     background-color: var(--page-main-color);
     color: var(--font-color-black);
 }
@@ -51,7 +52,7 @@ header {
     align-items: center;
     width: 100%;
     height: var(--header-height);
-    box-shadow: rgba(0, 0, 0, .2) 0px 1px 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 2px;
     overflow: hidden;
     background-color: #f0f0f0;
     user-select: none;
@@ -80,11 +81,7 @@ h6 {
 }
 
 .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 .header-wrapper {
@@ -135,21 +132,21 @@ h6 {
     border-radius: 1.4em;
     border: none;
 
-    padding: .7em 1.4em;
+    padding: 0.7em 1.4em;
     background-color: #404040;
     font-size: 1.2em;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
 
-    transition: all .5s;
+    transition: all 0.5s;
     user-select: none;
 }
 
 .button:hover {
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
     background-color: #f0f0f0ff;
-    padding: .6em 1.3em;
+    padding: 0.6em 1.3em;
     color: var(--font-color-black);
     cursor: pointer;
 }
@@ -157,12 +154,12 @@ h6 {
 .button-control {
     display: inline-block;
     border-radius: 50%;
-    padding: .2em;
+    padding: 0.2em;
     background-color: #00000000;
     color: var(--font-color-black);
     text-decoration: none;
 
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer;
 }
 
@@ -180,7 +177,10 @@ h6 {
     justify-content: center;
     align-items: center;
     --this-padding-top-bottom: 3rem;
-    min-height: calc(100dvh - var(--header-height) - var(--footer-height) - var(--this-padding-top-bottom) * 2);
+    min-height: calc(
+        100dvh - var(--header-height) - var(--footer-height) -
+            var(--this-padding-top-bottom) * 2
+    );
     padding: var(--this-padding-top-bottom);
     gap: 2rem;
     overflow: auto;
@@ -206,7 +206,7 @@ h6 {
 
 .section__title {
     border-bottom: 2px solid #c0c0c0;
-    padding: .5em;
+    padding: 0.5em;
     font-size: 1.5rem;
     text-align: center;
     color: var(--font-color-bule);
@@ -252,5 +252,5 @@ h6 {
 }
 
 .gap-half {
-    gap: .5em;
+    gap: 0.5em;
 }

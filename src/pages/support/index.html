@@ -10,87 +10,100 @@
 -->
 <!DOCTYPE html>
 <html lang="ja-JP">
+    <head prefix="og: https://ogp.me/ns#">
+        <meta charset="UTF-8" />
 
-<head prefix="og: https://ogp.me/ns#">
-    <meta charset="UTF-8">
+        <title>支援 | よね/Yone</title>
 
-    <title>支援 | よね/Yone</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="https://www.yoneyo.com/support/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="よね/Yone" />
+        <meta property="og:title" content="支援" />
+        <meta property="og:description" content="よね/Yone を支援する。" />
+        <meta
+            property="og:image"
+            content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png"
+        />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://www.yoneyo.com/support/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="よね/Yone">
-    <meta property="og:title" content="支援">
-    <meta property="og:description" content="よね/Yone を支援する。">
-    <meta property="og:image" content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png">
+        <base href="https://www.yoneyo.com/" />
 
-    <base href="https://www.yoneyo.com/">
+        <link
+            rel="shortcut icon"
+            href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png"
+            type="image/x-icon"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/common.css" />
+        <link rel="stylesheet" href="./support/styles/index.css" />
 
-    <link rel="shortcut icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./support/styles/index.css">
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-GP5XFVB2DV"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GP5XFVB2DV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+            gtag("config", "G-GP5XFVB2DV");
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./scripts/common.js" async></script>
+    </head>
 
-        gtag('config', 'G-GP5XFVB2DV');
-    </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./scripts/common.js" async></script>
-</head>
+    <body>
+        <header></header>
 
-<body>
-    <header></header>
+        <main>
+            <section id="notification"></section>
 
-    <main>
-        <section id="notification"></section>
+            <section id="main">
+                <h1 id="pageTitle">よね/Yone を支援する</h1>
 
-        <section id="main">
-            <h1 id="pageTitle">
-                よね/Yone を支援する
-            </h1>
+                <section id="typeList">
+                    <h2 class="sectionTitle">受け付けている支援方法</h2>
 
-            <section id="typeList">
-                <h2 class="sectionTitle">
-                    受け付けている支援方法
-                </h2>
+                    <ul>
+                        <li id="paymentKyash">
+                            <a href="./support/kyash/">
+                                <span> Kyash送金 </span>
 
-                <ul>
-                    <li id="paymentKyash">
-                        <a href="./support/kyash/">
-                            <span>
-                                Kyash送金
-                            </span>
+                                <img
+                                    class="payment-logo"
+                                    src="https://cdn.yoneyo.com/images/payment_logos/kyash_logo.png"
+                                    alt="Kyash Logo"
+                                />
+                            </a>
+                        </li>
 
-                            <img class="payment-logo" src="https://cdn.yoneyo.com/images/payment_logos/kyash_logo.png"
-                                alt="Kyash Logo">
-                        </a>
-                    </li>
+                        <li id="paymentPayPay">
+                            <a href="./support/paypay/">
+                                <span> PayPay送金 </span>
 
-                    <li id="paymentPayPay">
-                        <a href="./support/paypay/">
-                            <span>
-                                PayPay送金
-                            </span>
-
-                            <img class="payment-logo"
-                                src="https://image.paypay.ne.jp/page/notice-merchant/entry/20181016/159/img_logo_1.jpg?_ga=2.142954801.503477996.1689231061-1092895403.1687423828"
-                                alt="PayPay Logo">
-                        </a>
-                    </li>
-                </ul>
+                                <img
+                                    class="payment-logo"
+                                    src="https://image.paypay.ne.jp/page/notice-merchant/entry/20181016/159/img_logo_1.jpg?_ga=2.142954801.503477996.1689231061-1092895403.1687423828"
+                                    alt="PayPay Logo"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </section>
-        </section>
-    </main>
+        </main>
 
-    <footer></footer>
-</body>
-
+        <footer></footer>
+    </body>
 </html>

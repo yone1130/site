@@ -50,38 +50,38 @@ main a {
 }
 
 .about__table {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .about__tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 64, .1);
+    background-color: rgba(0, 0, 64, 0.1);
 }
 
 .about__tr:nth-of-type(even) {
-    background-color: rgba(0, 0, 64, .05);
+    background-color: rgba(0, 0, 64, 0.05);
 }
 
 .about__th,
 .about__td {
     min-width: 5em;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
 }
 
 .links__content {
-    gap: .8em;
+    gap: 0.8em;
 }
 
 .links__ol {
     display: flex;
-    gap: .8em;
+    gap: 0.8em;
 }
 
 .links__li {
     display: flex;
     width: 7em;
     height: 100%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 .links__li:hover {
@@ -96,7 +96,7 @@ main a {
     width: calc(100% - 1em);
     height: calc(100% - 1em);
     border-radius: 20%;
-    padding: .5em;
+    padding: 0.5em;
     color: #020202;
     text-decoration: none;
 }
@@ -139,13 +139,13 @@ main a {
 .copyright {
     padding-top: 1em;
     padding-bottom: 1em;
-    gap: .5em;
+    gap: 0.5em;
 }
 
 .copyright__item {
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 @media (max-width: 769px) {
