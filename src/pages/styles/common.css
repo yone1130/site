@@ -20,9 +20,7 @@
     --page-main-font-family: "Noto Sans JP", sans-serif;
     --header-height: 4.5em;
     --footer-height: 7em;
-    --main-min-height: calc(
-        100vh - var(--header-height) - var(--footer-height)
-    );
+    --main-min-height: calc(100dvh - var(--header-height));
 }
 
 * {
@@ -172,21 +170,20 @@ h6 {
 }
 
 .errors-page {
+    overflow: auto;
+}
+
+.errors-page__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    --this-padding-top-bottom: 3rem;
-    min-height: calc(
-        100dvh - var(--header-height) - var(--footer-height) -
-            var(--this-padding-top-bottom) * 2
-    );
-    padding: var(--this-padding-top-bottom);
     gap: 2rem;
-    overflow: auto;
+    min-height: calc(var(--main-min-height) - var(--footer-height));
 }
 
 .errors-page__title {
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
 }
