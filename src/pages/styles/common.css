@@ -141,15 +141,12 @@ h6 {
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
-
-    transition: all 0.5s;
+    transition: background-color 0.3s, color 0.3s;
     user-select: none;
 }
 
 .button:hover {
-    margin-bottom: 0.2em;
     background-color: #f0f0f0ff;
-    padding: 0.6em 1.3em;
     color: var(--font-color-black);
     cursor: pointer;
 }

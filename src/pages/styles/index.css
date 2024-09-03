@@ -97,6 +97,7 @@ main a {
     height: calc(100% - 1em);
     border-radius: 20%;
     padding: 0.5em;
+    gap: 0.5rem;
     color: #020202;
     text-decoration: none;
 }
