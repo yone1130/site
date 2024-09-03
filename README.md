@@ -1,16 +1,16 @@
-
 # Yone Website
+
+[→ 日本語](./README_JP.md)
 
 ## Overview
 
-Yone's Website.  
-よね/Yone のウェブサイトです。
+Yone's Website.
 
-[https://www.yoneyo.com/](https://www.yoneyo.com/) で公開しています。
+Published at [https://www.yoneyo.com/](https://www.yoneyo.com/).
 
 ## Usage
 
-`src/pages/` をデプロイします。
+Deploy directory `src/pages/`.
 
 ## LICENSE
 
