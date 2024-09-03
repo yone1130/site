@@ -59,8 +59,11 @@ header {
 }
 
 main {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
     min-height: var(--main-min-height);
-    margin-top: var(--header-height);
 }
 
 footer {
