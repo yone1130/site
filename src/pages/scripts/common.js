@@ -13,7 +13,7 @@
 
 (() => {
     document.addEventListener("DOMContentLoaded", () => {
-        $("header").load("./elements/header.html");
-        $("footer").load("./elements/footer.html");
+        $("header").load("./components/header.html");
+        $("footer").load("./components/footer.html");
     });
 })();
