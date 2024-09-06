@@ -4,16 +4,16 @@
 
 ## Overview
 
-Yone's Website.
+Yone's website.
 
-Published at [https://www.yoneyo.com/](https://www.yoneyo.com/).
+Published at https://www.yoneyo.com/ .
 
 ## Usage
 
 Deploy directory `src/pages/`.
 
-## LICENSE
+## License
 
-No Licensed
+No licensed.
 
 Copyright (C) よね/Yone
