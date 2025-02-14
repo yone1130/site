@@ -51,11 +51,11 @@ h2 {
     content: "";
 }
 
-#typeList > ul {
+#typeList>ul {
     list-style: none;
 }
 
-#typeList > ul > li {
+#typeList>ul>li {
     width: calc(100% - 2em);
     max-width: calc(2em + 24em + 2em);
     margin: 4em auto;
@@ -67,7 +67,7 @@ h2 {
     user-select: none;
 }
 
-#typeList > ul > li > a {
+#typeList>ul>li>a {
     display: block;
     width: 100%;
     height: 100%;
@@ -75,7 +75,7 @@ h2 {
     text-decoration: none;
 }
 
-#typeList > ul > li:hover {
+#typeList>ul>li:hover {
     box-shadow: 0 0 8px 4px #00000020;
 }
 
@@ -86,14 +86,14 @@ h2 {
     max-width: 24em;
 }
 
-#typeList > ul > li > a > span {
+#typeList>ul>li>a>span {
     display: block;
     margin-top: 0.5em;
     text-align: center;
     font-size: 1.5em;
 }
 
-#typeList > ul > li > a > span::after {
+#typeList>ul>li>a>span::after {
     display: block;
     height: 2px;
     width: 20%;
@@ -127,16 +127,16 @@ h2 {
     padding: 2em 0;
 }
 
-#bank > ul {
+#bank>ul {
     list-style: none;
     padding: 1em 0;
 }
 
-#bank > ul > li {
+#bank>ul>li {
     margin-top: 0.5em;
 }
 
-#bank > ul > li > span {
+#bank>ul>li>span {
     display: block;
     width: auto;
     margin: 0.2em;
